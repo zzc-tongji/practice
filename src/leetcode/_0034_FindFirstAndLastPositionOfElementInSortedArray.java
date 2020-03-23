@@ -26,6 +26,7 @@ public class _0034_FindFirstAndLastPositionOfElementInSortedArray {
   }
 
   public int[] searchRange(int[] nums, int target) {
+    // find first, find last
     if (nums == null || nums.length <= 0) {
       return new int[] { -1, -1 };
     }
@@ -35,6 +36,8 @@ public class _0034_FindFirstAndLastPositionOfElementInSortedArray {
   }
 
   public int searchFirst(int[] nums, int target) {
+    // similiar to function `searchInsert` in file
+    // `_0035_SearchInsertPosition.java`
     if (nums == null || nums.length <= 0) {
       return -1;
     }
@@ -101,6 +104,36 @@ public class _0034_FindFirstAndLastPositionOfElementInSortedArray {
     return -1; // Target is not found.
     /*
      * time: O(log n)
+     * 
+     * space: O(1)
+     */
+  }
+
+  public int[] searchRange1(int[] nums, int target) {
+    // find first, iterate to get last
+    if (nums == null || nums.length <= 0) {
+      return new int[] { -1, -1 };
+    }
+    int first = searchFirst(nums, target);
+    if (first == -1) {
+      return new int[] { -1, -1 };
+    }
+    int last = first;
+    while (last < nums.length && nums[last] == target) {
+      last += 1;
+    }
+    last -= 1;
+    return new int[] { first, last };
+    /*
+     * time: O(log n) + O(n) = O(n)
+     * 
+     * Which is better? It depends.
+     * 
+     * If the average range length of problems is k. The smaller k is, the better
+     * solution #1 is (than #0).
+     * 
+     * By the way, if there is an restriction that range is not more than k', the
+     * time complexity is changed into O(log n) + O(k') = O(log n).
      * 
      * space: O(1)
      */
