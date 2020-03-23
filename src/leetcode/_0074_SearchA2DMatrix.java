@@ -61,9 +61,12 @@ public class _0074_SearchA2DMatrix {
         right = mid - 1;
       } else { // midValue == target
         return true;
+        // return getRowColumnIndex(mid);
       }
     }
     return false;
+    // return new int[]{-1, -1};
+
     /*
      * time: O(r) + O(log rc), r as row number, c as column number
      * 
@@ -78,4 +81,9 @@ public class _0074_SearchA2DMatrix {
     int colNum = matrix[0].length;
     return matrix[index / colNum][index % colNum];
   }
+
+  // public int[] getRowColumnIndex(int[][] matrix, int index) {
+  // int colNum = matrix[0].length;
+  // return new int[] { index / colNum, index % colNum };
+  // }
 }
