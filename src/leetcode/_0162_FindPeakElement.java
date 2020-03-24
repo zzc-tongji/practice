@@ -67,7 +67,7 @@ public class _0162_FindPeakElement {
      */
   }
 
-  public int getValue(int nums[], int index) {
+  private int getValue(int nums[], int index) {
     if (nums == null || index < 0 || index >= nums.length) {
       // nums[-1] = nums[n] = -∞.
       return Integer.MIN_VALUE;

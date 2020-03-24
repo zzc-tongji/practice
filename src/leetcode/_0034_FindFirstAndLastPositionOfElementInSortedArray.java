@@ -35,7 +35,7 @@ public class _0034_FindFirstAndLastPositionOfElementInSortedArray {
     return new int[] { first, last };
   }
 
-  public int searchFirst(int[] nums, int target) {
+  private int searchFirst(int[] nums, int target) {
     // similiar to function `searchInsert` in file
     // `_0035_SearchInsertPosition.java`
     if (nums == null || nums.length <= 0) {
@@ -73,7 +73,7 @@ public class _0034_FindFirstAndLastPositionOfElementInSortedArray {
      */
   }
 
-  public int searchLast(int[] nums, int target) {
+  private int searchLast(int[] nums, int target) {
     if (nums == null || nums.length <= 0) {
       return -1;
     }

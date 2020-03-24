@@ -77,12 +77,12 @@ public class _0074_SearchA2DMatrix {
      */
   }
 
-  public int getValue(int[][] matrix, int index) {
+  private int getValue(int[][] matrix, int index) {
     int colNum = matrix[0].length;
     return matrix[index / colNum][index % colNum];
   }
 
-  // public int[] getRowColumnIndex(int[][] matrix, int index) {
+  // private int[] getRowColumnIndex(int[][] matrix, int index) {
   // int colNum = matrix[0].length;
   // return new int[] { index / colNum, index % colNum };
   // }

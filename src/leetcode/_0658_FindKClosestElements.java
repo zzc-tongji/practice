@@ -77,7 +77,7 @@ public class _0658_FindKClosestElements {
     return res;
   }
 
-  public int findClosestIndex(int[] arr, int x) {
+  private int findClosestIndex(int[] arr, int x) {
     // find the closest item and return index, left preferred
     if (arr == null || arr.length <= 0) {
       return -1;
@@ -97,14 +97,5 @@ public class _0658_FindKClosestElements {
     }
     // left preferred
     return Math.abs(arr[left] - x) <= Math.abs(arr[right] - x) ? left : right;
-  }
-
-  public void templateFunction() {
-    System.out.println("Template");
-    /*
-     * time: O(log n) + O(k)
-     * 
-     * space: O(1)
-     */
   }
 }
