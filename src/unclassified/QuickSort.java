@@ -60,11 +60,14 @@ public class QuickSort {
   }
 
   private int getPivotIndexSlowFast(int[] array, int left, int right) {
+    // MAYBE NOT CORRECT!!
+    //
+    // By using this, quick sort becomes stable.
     int pivotRandIndex = left + (int) (Math.random() * (right - left + 1));
     int pivotValue = array[pivotRandIndex];
     swap(array, pivotRandIndex, right);
     int slow = left;
-    int fast = right;
+    int fast = left;
     // [0, slow) < pivot
     // [slow, fast) >= pivot
     while (fast <= right) {
