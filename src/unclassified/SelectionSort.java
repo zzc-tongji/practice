@@ -20,6 +20,12 @@ public class SelectionSort {
       }
       swap(array, i, minIndex);
     }
+
+    /*
+     * time: O(n ^ 2)
+     * 
+     * space: O(1)
+     */
   }
 
   private void swap(int[] array, int i, int j) {
