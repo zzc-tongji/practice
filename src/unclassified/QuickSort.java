@@ -1,5 +1,7 @@
 package unclassified;
 
+import java.util.Random;
+
 public class QuickSort {
   private boolean slowFastEnabled = false;
 
@@ -34,10 +36,11 @@ public class QuickSort {
   private int getPivotIndex(int[] array, int left, int right) {
     // It can deal with arrays with duplicate values.
     //
-    // Since 0 <= Math.random < 1,
+    // Since rand.nextInt(x) will return an int in [0, x),
     // to ensure the posibility to hit `right`,
     // there is an `+ 1` at the end.
-    int pivotRandIndex = left + (int) (Math.random() * (right - left + 1));
+    Random rand = new Random();
+    int pivotRandIndex = left + rand.nextInt(right - left + 1);
     int pivotValue = array[pivotRandIndex];
     // swap the pivot to the end
     swap(array, pivotRandIndex, right);
@@ -66,7 +69,8 @@ public class QuickSort {
 
   private int getPivotIndexSlowFast(int[] array, int left, int right) {
     // It can deal with arrays with duplicate values.
-    int pivotRandIndex = left + (int) (Math.random() * (right - left + 1));
+    Random rand = new Random();
+    int pivotRandIndex = left + rand.nextInt(right - left + 1);
     int pivotValue = array[pivotRandIndex];
     swap(array, pivotRandIndex, right);
     int slow = left;
