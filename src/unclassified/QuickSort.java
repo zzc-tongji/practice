@@ -1,6 +1,8 @@
 package unclassified;
 
 public class QuickSort {
+  private boolean slowFastEnabled = false;
+
   public static void main(String[] args) {
     System.out.println("Hello world.");
   }
@@ -24,15 +26,16 @@ public class QuickSort {
     if (left >= right) {
       return;
     }
-    int pivotIndex = getPivotIndex(array, left, right);
+    int pivotIndex = slowFastEnabled ? getPivotIndexSlowFast(array, left, right) : getPivotIndex(array, left, right);
     helper(array, left, pivotIndex - 1);
     helper(array, pivotIndex + 1, right);
   }
 
   private int getPivotIndex(int[] array, int left, int right) {
-    // 0 <= Math.random < 1
+    // It can deal with arrays with duplicate values.
     //
-    // To ensure the posibility to hit `right`,
+    // Since 0 <= Math.random < 1,
+    // to ensure the posibility to hit `right`,
     // there is an `+ 1` at the end.
     int pivotRandIndex = left + (int) (Math.random() * (right - left + 1));
     int pivotValue = array[pivotRandIndex];
@@ -44,7 +47,7 @@ public class QuickSort {
       if (array[leftI] < pivotValue) {
         leftI += 1;
       } else if (array[rightI] >= pivotValue) {
-        right -= 1;
+        rightI -= 1;
       } else {
         swap(array, leftI, rightI);
         leftI += 1;
@@ -56,21 +59,19 @@ public class QuickSort {
     //
     // swap the pivot to the correct position
     swap(array, leftI, right);
+    // [0, leftI) < pivot
+    // (leftI, right] >= pivot
     return leftI;
   }
 
   private int getPivotIndexSlowFast(int[] array, int left, int right) {
-    // MAYBE NOT CORRECT!!
-    //
-    // By using this, quick sort becomes stable.
+    // It can deal with arrays with duplicate values.
     int pivotRandIndex = left + (int) (Math.random() * (right - left + 1));
     int pivotValue = array[pivotRandIndex];
     swap(array, pivotRandIndex, right);
     int slow = left;
     int fast = left;
-    // [0, slow) < pivot
-    // [slow, fast) >= pivot
-    while (fast <= right) {
+    while (fast < right) {
       if (array[slow] < pivotValue) {
         slow += 1;
       } else if (array[fast] < pivotValue) {
@@ -81,6 +82,8 @@ public class QuickSort {
     }
     // After while, `fast` is out of the right edge.
     swap(array, slow, right);
+    // [0, slow) < pivot
+    // [slow, fast) >= pivot
     return slow;
   }
 
