@@ -59,6 +59,28 @@ public class QuickSort {
     return leftI;
   }
 
+  private int getPivotIndexSlowFast(int[] array, int left, int right) {
+    int pivotRandIndex = left + (int) (Math.random() * (right - left + 1));
+    int pivotValue = array[pivotRandIndex];
+    swap(array, pivotRandIndex, right);
+    int slow = left;
+    int fast = right;
+    // [0, slow) < pivot
+    // [slow, fast) >= pivot
+    while (fast <= right) {
+      if (array[slow] < pivotValue) {
+        slow += 1;
+      } else if (array[fast] < pivotValue) {
+        swap(array, slow, fast);
+        slow += 1;
+      }
+      fast += 1;
+    }
+    // After while, `fast` is out of the right edge.
+    swap(array, slow, right);
+    return slow;
+  }
+
   private void swap(int[] array, int i, int j) {
     int temp = array[i];
     array[i] = array[j];
