@@ -17,7 +17,7 @@ public class MergeSort {
     divide(array, helper, 0, array.length - 1);
     /*
      * time: O(n log n)
-     * 
+     *
      * space: O(n)
      */
   }
@@ -75,7 +75,7 @@ public class MergeSort {
     return divide(array, 0, array.size() - 1);
     /*
      * time: O(n log n)
-     * 
+     *
      * space: O(n)
      */
   }

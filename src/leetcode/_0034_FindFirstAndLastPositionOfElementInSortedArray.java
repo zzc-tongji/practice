@@ -2,22 +2,22 @@ package leetcode;
 
 /**
  * 0034. Find First and Last Position of Element in Sorted Array Medium
- * 
+ *
  * Given an array of integers nums sorted in ascending order, find the starting
  * and ending position of a given target value.
- * 
+ *
  * Your algorithm's runtime complexity must be in the order of O(log n).
- * 
+ *
  * If the target is not found in the array, return [-1, -1].
- * 
+ *
  * Example 1:
- * 
+ *
  * Input: nums = [5,7,7,8,8,10], target = 8
- * 
+ *
  * Output: [3,4] Example 2:
- * 
+ *
  * Input: nums = [5,7,7,8,8,10], target = 6
- * 
+ *
  * Output: [-1,-1]
  */
 public class _0034_FindFirstAndLastPositionOfElementInSortedArray {
@@ -68,7 +68,7 @@ public class _0034_FindFirstAndLastPositionOfElementInSortedArray {
     return -1; // Target is not found.
     /*
      * time: O(log n)
-     * 
+     *
      * space: O(1)
      */
   }
@@ -104,7 +104,7 @@ public class _0034_FindFirstAndLastPositionOfElementInSortedArray {
     return -1; // Target is not found.
     /*
      * time: O(log n)
-     * 
+     *
      * space: O(1)
      */
   }
@@ -126,15 +126,15 @@ public class _0034_FindFirstAndLastPositionOfElementInSortedArray {
     return new int[] { first, last };
     /*
      * time: O(log n) + O(n) = O(n)
-     * 
+     *
      * Which is better? It depends.
-     * 
+     *
      * If the average range length of problems is k. The smaller k is, the better
      * solution #1 is (than #0).
-     * 
+     *
      * By the way, if there is an restriction that range is not more than k', the
      * time complexity is changed into O(log n) + O(k') = O(log n).
-     * 
+     *
      * space: O(1)
      */
   }

@@ -2,7 +2,7 @@ package leetcode;
 
 /**
  * 0000. Template Class
- * 
+ *
  * (problem description)
  */
 public class _0000_TemplateClass {
@@ -14,7 +14,7 @@ public class _0000_TemplateClass {
     System.out.println("Template");
     /*
      * time: O(1)
-     * 
+     *
      * space: O(1)
      */
   }

@@ -16,7 +16,7 @@ public class QuickSort {
     helper(array, 0, array.length - 1);
     /*
      * time: O(n log n)
-     * 
+     *
      * space: O(1)
      */
   }
