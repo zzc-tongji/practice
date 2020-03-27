@@ -18,4 +18,4 @@ I add some notes for better understanding.
 
 - All ".md" files are edited by Typora.
 - Style of all ".md" files is Github Flavored Markdown.
-- There is a CRLF (Windows) at end of each line.
+- There is a LF (Linux) at end of each line.
