@@ -46,4 +46,23 @@ public class _0283_MoveZeros {
     array[i] = array[j];
     array[j] = temp;
   }
+
+  public void moveZerosNotStable(int nums[]) {
+    if (nums == null || nums.length <= 1) {
+      return;
+    }
+    int left = 0;
+    int right = nums.length - 1;
+    while (left <= right) {
+      if (nums[left] > 0) {
+        left += 1;
+      } else if (nums[right] <= 0) {
+        right -= 1;
+      } else {
+        swap(nums, left, right);
+        left += 1;
+        right -= 1;
+      }
+    }
+  }
 }
