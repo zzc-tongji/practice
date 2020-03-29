@@ -3,17 +3,21 @@ package geometry;
 public abstract class ConvexQuadrilateralAbstract implements TwoDimensionalGeometry {
   public abstract String classify();
 
-  final double inaccuracy = 0.001;
+  private final int vertexNumber = 4;
 
   @Override
   public int edgeNumber() {
     return 4;
   }
 
+  public ConvexQuadrilateralAbstract() {
+    System.out.println("[constructor] ConvexQuadrilateralAbstract");
+  }
+
   /**
-   * @return the inaccuracy
+   * @return the vertexNumber
    */
-  public double getInaccuracy() {
-    return inaccuracy;
+  public int getVertexNumber() {
+    return vertexNumber;
   }
 }

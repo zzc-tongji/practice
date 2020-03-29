@@ -26,6 +26,7 @@ public final class Triangle implements TwoDimensionalGeometry {
   }
 
   public Triangle(double edgeAB, double edgeBC, double edgeCA) {
+    System.out.println("[constructor] Triangle with argument(s)");
     double halfSum = (edgeAB + edgeBC + edgeCA) / 2;
     if (edgeAB >= halfSum || edgeBC > halfSum || edgeCA > halfSum) {
       throw new IllegalArgumentException(

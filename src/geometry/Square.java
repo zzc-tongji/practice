@@ -8,6 +8,7 @@ public final class Square extends Rectangle {
 
   public Square(double sideLength) {
     super();
+    System.out.println("[constructor] Square with argument(s)");
     if (sideLength <= 0) {
       throw new IllegalArgumentException("The side length must be larger than 0.");
     }
@@ -15,6 +16,7 @@ public final class Square extends Rectangle {
   }
 
   void initialize(double sideLength) {
+    System.out.println("[initialize] Square");
     super.initialize(sideLength, sideLength);
   }
 }

@@ -12,11 +12,12 @@ public class Parallelogram extends ConvexQuadrilateral {
   }
 
   Parallelogram() {
-
+    System.out.println("[constructor] Parallelogram");
   }
 
   public Parallelogram(double[] edgeList, double angleInRadian) {
     super();
+    System.out.println("[constructor] Parallelogram with argument(s)");
     if (edgeList == null || edgeList.length != 2) {
       throw new IllegalArgumentException("There must be 2 edge.");
     }
@@ -27,6 +28,7 @@ public class Parallelogram extends ConvexQuadrilateral {
   }
 
   void initialize(double[] edgeList, double angleInRadian) {
+    System.out.println("[initialize] Parallelogram");
     super.initialize(new double[] { edgeList[0], edgeList[1], edgeList[0], edgeList[1] },
         new double[] { angleInRadian, angleInRadian });
   }

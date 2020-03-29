@@ -30,10 +30,12 @@ public class ConvexQuadrilateral extends ConvexQuadrilateralAbstract {
   }
 
   ConvexQuadrilateral() {
+    System.out.println("[constructor] ConvexQuadrilateral");
   }
 
   public ConvexQuadrilateral(double[] edgeList, double[] angleListInRadian) {
     super();
+    System.out.println("[constructor] ConvexQuadrilateral with argument(s)");
     setEdges(edgeList);
     setAngleListInRadian(angleListInRadian);
   }
@@ -95,6 +97,7 @@ public class ConvexQuadrilateral extends ConvexQuadrilateralAbstract {
   }
 
   void initialize(double[] edgeList, double[] angleListInRadian) {
+    System.out.println("[initialize] ConvexQuadrilateral");
     this.edgeList = edgeList;
     this.angleListInRadian = angleListInRadian;
   }

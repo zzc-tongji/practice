@@ -12,11 +12,12 @@ public class Rectangle extends Parallelogram {
   }
 
   Rectangle() {
-
+    System.out.println("[constructor] Rectangle");
   }
 
   public Rectangle(double width, double height) {
     super();
+    System.out.println("[constructor] Rectangle with argument(s)");
     if (width <= 0 || height <= 0) {
       throw new IllegalArgumentException("The width and height must be larger than 0.");
     }
@@ -24,6 +25,7 @@ public class Rectangle extends Parallelogram {
   }
 
   void initialize(double width, double height) {
+    System.out.println("[initialize] Rectangle");
     super.initialize(new double[] { width, height }, Math.PI / 2);
   }
 }

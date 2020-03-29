@@ -8,6 +8,7 @@ public final class Rhombus extends Parallelogram {
 
   public Rhombus(double sideLength, double angleInRadian) {
     super();
+    System.out.println("[constructor] Rhombus with argument(s)");
     if (sideLength <= 0) {
       throw new IllegalArgumentException("The side length must be larger than 0.");
     }
@@ -18,6 +19,7 @@ public final class Rhombus extends Parallelogram {
   }
 
   public void initialize(double sideLength, double angleInRadian) {
+    System.out.println("[initialize] Rhombus");
     super.initialize(new double[] { sideLength, sideLength }, angleInRadian);
   }
 }
