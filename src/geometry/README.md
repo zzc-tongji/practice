@@ -20,6 +20,3 @@ It is also a sample usage of the following:
 ### UML
 
 https://www.processon.com/view/link/5e825463e4b08c5b86f26e3d
-
-![](https://assets.processon.com/chart_image/5e824678e4b08c5b86f26c9e.png)
-
