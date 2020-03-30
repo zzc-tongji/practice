@@ -1,6 +1,8 @@
 package geometry;
 
 public class ConvexQuadrilateral extends ConvexQuadrilateralAbstract {
+  // convex quadrilateral image:
+  // https://pic2.zhimg.com/80/v2-c887d558f3768949fba44294a3d9b055_720w.png
   double[] edgeList;
   // [0], [1], [2], [3] ===> a, b, c, d
   double[] angleListInRadian;
@@ -18,6 +20,7 @@ public class ConvexQuadrilateral extends ConvexQuadrilateralAbstract {
   @Override
   public double calculateArea() {
     // Heron's formula for convex quadrilateral
+    // formula 4 in https://zhuanlan.zhihu.com/p/25937122
     double p = (edgeList[0] + edgeList[1] + edgeList[2] + edgeList[3]) / 2;
     return Math
         .sqrt((p - edgeList[0]) * (p - edgeList[1]) * (p - edgeList[2]) * (p - edgeList[3]) - edgeList[0] * edgeList[1]
