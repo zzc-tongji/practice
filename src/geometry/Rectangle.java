@@ -8,7 +8,7 @@ public class Rectangle extends Parallelogram {
 
   @Override
   public String classify() {
-    return "Rectangle";
+    return Classification.RECTANGLE.getInformation();
   }
 
   Rectangle() {

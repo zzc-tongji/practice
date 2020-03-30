@@ -12,9 +12,9 @@ It is also a sample usage of the following:
   - concrete class
   - enumeration
 - access modifier
-  - private / default / protected / public
-  - default / static
-  - default / final
+  - private / protected / public
+  - static
+  - final
 - UML class diagram
 
 ### UML

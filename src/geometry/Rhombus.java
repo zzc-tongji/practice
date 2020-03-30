@@ -3,7 +3,7 @@ package geometry;
 public final class Rhombus extends Parallelogram {
   @Override
   public String classify() {
-    return "Rhombus";
+    return Classification.RHOMBUS.getInformation();
   }
 
   public Rhombus(double sideLength, double angleInRadian) {

@@ -1,6 +1,24 @@
 package geometry;
 
 public class ConvexQuadrilateral extends ConvexQuadrilateralAbstract {
+  static enum Classification {
+    CONVEX_QUADRILATERAL("Convex Quadrilateral"), PARALLELOGRAM("Parallelogram"), RHOMBUS("Rhombus"),
+    RECTANGLE("Rectangle"), SQUARE("Square");
+
+    private String information;
+
+    private Classification(String information) {
+      this.information = information;
+    }
+
+    /**
+     * @return the information
+     */
+    public String getInformation() {
+      return information;
+    }
+  }
+
   // convex quadrilateral image:
   // https://pic2.zhimg.com/80/v2-c887d558f3768949fba44294a3d9b055_720w.png
   double[] edgeList;
@@ -29,7 +47,7 @@ public class ConvexQuadrilateral extends ConvexQuadrilateralAbstract {
 
   @Override
   public String classify() {
-    return "Convex Quadrilateral";
+    return Classification.CONVEX_QUADRILATERAL.getInformation();
   }
 
   ConvexQuadrilateral() {

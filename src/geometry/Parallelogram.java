@@ -8,7 +8,7 @@ public class Parallelogram extends ConvexQuadrilateral {
 
   @Override
   public String classify() {
-    return "Parallelogram";
+    return Classification.PARALLELOGRAM.getInformation();
   }
 
   Parallelogram() {

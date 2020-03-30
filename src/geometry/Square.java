@@ -3,7 +3,7 @@ package geometry;
 public final class Square extends Rectangle {
   @Override
   public String classify() {
-    return "Square";
+    return Classification.SQUARE.getInformation();
   }
 
   public Square(double sideLength) {
