@@ -2,13 +2,13 @@ package geometry;
 
 public class Rectangle extends Parallelogram {
   @Override
-  public String classify() {
-    return "Rectangle";
+  public double calculateArea() {
+    return edgeList[0] * edgeList[1];
   }
 
   @Override
-  public double calculateArea() {
-    return edgeList[0] * edgeList[1];
+  public String classify() {
+    return "Rectangle";
   }
 
   Rectangle() {

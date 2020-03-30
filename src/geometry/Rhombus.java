@@ -18,7 +18,7 @@ public final class Rhombus extends Parallelogram {
     initialize(sideLength, angleInRadian);
   }
 
-  public void initialize(double sideLength, double angleInRadian) {
+  void initialize(double sideLength, double angleInRadian) {
     System.out.println("[initialize] Rhombus");
     super.initialize(new double[] { sideLength, sideLength }, angleInRadian);
   }

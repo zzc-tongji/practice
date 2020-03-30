@@ -3,11 +3,12 @@ package geometry;
 public abstract class ConvexQuadrilateralAbstract implements TwoDimensionalGeometry {
   public abstract String classify();
 
+  private static final int EDGE_NUMBER = 4;
   private final int vertexNumber = 4;
 
   @Override
   public int edgeNumber() {
-    return 4;
+    return EDGE_NUMBER;
   }
 
   public ConvexQuadrilateralAbstract() {

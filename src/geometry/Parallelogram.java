@@ -2,13 +2,13 @@ package geometry;
 
 public class Parallelogram extends ConvexQuadrilateral {
   @Override
-  public String classify() {
-    return "Parallelogram";
+  public double calculateArea() {
+    return edgeList[0] * edgeList[1] * Math.sin(angleListInRadian[0]);
   }
 
   @Override
-  public double calculateArea() {
-    return edgeList[0] * edgeList[1] * Math.sin(angleListInRadian[0]);
+  public String classify() {
+    return "Parallelogram";
   }
 
   Parallelogram() {

@@ -36,14 +36,14 @@ public class ConvexQuadrilateral extends ConvexQuadrilateralAbstract {
   public ConvexQuadrilateral(double[] edgeList, double[] angleListInRadian) {
     super();
     System.out.println("[constructor] ConvexQuadrilateral with argument(s)");
-    setEdges(edgeList);
+    setEdgeList(edgeList);
     setAngleListInRadian(angleListInRadian);
   }
 
   /**
    * @return the edgeList
    */
-  public double[] getEdges() {
+  public double[] getEdgeList() {
     double[] edgeList = new double[this.edgeList.length];
     for (int i = 0; i < this.edgeList.length; i++) {
       edgeList[i] = this.edgeList[i];
@@ -54,7 +54,7 @@ public class ConvexQuadrilateral extends ConvexQuadrilateralAbstract {
   /**
    * @param edgeList the edgeList to set
    */
-  public void setEdges(double[] edgeList) {
+  public void setEdgeList(double[] edgeList) {
     if (edgeList == null || edgeList.length != 4) {
       throw new IllegalArgumentException("There must be 4 edges.");
     }
@@ -72,7 +72,7 @@ public class ConvexQuadrilateral extends ConvexQuadrilateralAbstract {
   /**
    * @return the angleListInRadian
    */
-  public double[] getangleListInRadian() {
+  public double[] getAngleListInRadian() {
     double[] angleListInRadian = new double[this.angleListInRadian.length];
     for (int i = 0; i < this.angleListInRadian.length; i++) {
       angleListInRadian[i] = this.angleListInRadian[i];
