@@ -4,11 +4,11 @@ package leetcode;
  * Definition for singly-linked list.
  */
 public class ListNode {
-  int val;
-  ListNode next;
-  ListNode previous;
+  public int val;
+  public ListNode next;
+  public ListNode previous;
 
-  ListNode(int x) {
+  public ListNode(int x) {
     val = x;
     next = null;
     previous = null;
