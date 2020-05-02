@@ -39,7 +39,7 @@ public class _0035_SearchInsertPosition {
   }
 
   public int searchInsert(int[] nums, int target) {
-    // find the smallest larger position
+    // find the smallest - larger or equal - position
     //
     // similiar to function `searchFirst` in file
     // `_0034_FindFirstAndLastPositionOfElementInSortedArray.java`
@@ -68,9 +68,9 @@ public class _0035_SearchInsertPosition {
     }
     if (nums[right] >= target) {
       return right;
-      // 2 5 6 7
+      // 2 3 6 7
       //
-      // 2 4 6 7
+      // 2 3 4 7
       //
       // - l r -
     }

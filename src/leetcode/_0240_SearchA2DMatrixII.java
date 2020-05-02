@@ -27,6 +27,8 @@ public class _0240_SearchA2DMatrixII {
   }
 
   public boolean searchMatrix(int[][] matrix, int target) {
+    // quadrate search
+    //
     // validate matrix
     if (matrix == null || matrix.length <= 0) {
       return false;

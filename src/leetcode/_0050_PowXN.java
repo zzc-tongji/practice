@@ -119,7 +119,7 @@ public class _0050_PowXN {
     }
     return helper1(x, n / 2) * helper1(x, n / 2);
     /*
-     * time: O(n)
+     * time: O(log n)
      *
      * space: O(1)
      */
@@ -164,15 +164,6 @@ public class _0050_PowXN {
     return minus ? 1 / res : res;
     /*
      * time: O(n)
-     *
-     * space: O(1)
-     */
-  }
-
-  public void templateFunction() {
-    System.out.println("Template");
-    /*
-     * time: O(1)
      *
      * space: O(1)
      */
