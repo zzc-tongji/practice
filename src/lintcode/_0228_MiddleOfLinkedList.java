@@ -42,6 +42,7 @@ public class _0228_MiddleOfLinkedList {
     if (head == null || head.next == null) {
       return head;
     }
+    // Use slow-fast node pointer to solve the problem.
     ListNode slow = head;
     ListNode fast = head.next;
     while (fast != null && fast.next != null) {

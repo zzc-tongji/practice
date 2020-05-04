@@ -124,5 +124,5 @@ public class MergeSort {
 
   /* LinkedList */
 
-  // Use slow-fast dual-pointer, see file `_0148_SortList.java`.
+  // Use slow-fast pointer, see file `_0148_SortList.java`.
 }

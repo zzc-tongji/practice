@@ -52,9 +52,9 @@ public class _0206_ReverseLinkedList {
     // status after one loop:
     //
     // null <=== node1 .... node2 ===> node3 ===> node4 ===> null
-    // ..................... | ........ |
-    // .................... pre ...... post
-    // ............................... cur
+    // .......... | ........ |
+    // ......... pre ...... post
+    // .........  ........... cur
     //
     // status after all loops:
     //

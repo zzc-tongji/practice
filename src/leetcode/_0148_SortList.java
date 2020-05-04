@@ -26,20 +26,52 @@ public class _0148_SortList {
     if (head == null || head.next == null) {
       return head;
     }
-    // use slow-fast dual-pointer to get middle point (`slow`)
-    ListNode prev = null;
+    // use slow-fast distance pointer to get middle point (`slow`)
+    //
+    // For a linked list with 2 nodes, `slow` will be the last node.
+    // So use the pre-node of `slow` as the divider to avoid stack overflow.
+    ListNode pre = null;
     ListNode slow = head;
     ListNode fast = head;
     while (fast != null && fast.next != null) {
-      prev = slow;
+      pre = slow;
       slow = slow.next;
       fast = fast.next.next;
     }
     // disconnect `l1` and `l2` below
-    prev.next = null;
+    pre.next = null;
     // divide
     ListNode l1 = sortList(head);
     ListNode l2 = sortList(slow);
+    // conquer
+    return merge(l1, l2);
+    /*
+     * time: O(n log n)
+     *
+     * space: O(1)
+     */
+  }
+
+  public ListNode sortList1(ListNode head) {
+    if (head == null || head.next == null) {
+      return head;
+    }
+    // use slow-fast node pointer to get middle point (`slow.next`)
+    //
+    // For a linked list with 2 nodes, `slow` will be the first node.
+    // So use the post-node of `slow` as the divider to avoid stack overflow.
+    ListNode slow = head;
+    ListNode fast = head.next;
+    while (fast != null && fast.next != null) {
+      slow = slow.next;
+      fast = fast.next.next;
+    }
+    // disconnect `l1` and `l2` below
+    ListNode post = slow.next;
+    slow.next = null;
+    // divide
+    ListNode l1 = sortList(head);
+    ListNode l2 = sortList(post);
     // conquer
     return merge(l1, l2);
     /*
