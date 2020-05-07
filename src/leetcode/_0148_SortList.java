@@ -22,6 +22,8 @@ public class _0148_SortList {
     System.out.println("Hello world.");
   }
 
+  /* merge sort */
+
   public ListNode sortList(ListNode head) {
     if (head == null || head.next == null) {
       return head;
@@ -82,6 +84,7 @@ public class _0148_SortList {
   }
 
   private ListNode merge(ListNode l1, ListNode l2) {
+    // similiar as file `_0021_MergeTwoSortedLists`
     ListNode dummy = new ListNode(0);
     ListNode cur = dummy;
     ListNode l1p = l1;
@@ -99,4 +102,10 @@ public class _0148_SortList {
     cur.next = l1p != null ? l1p : l2p;
     return dummy.next;
   }
+
+   /* quick sort */
+
+   // TODO
+
+   // similiar as file `_0086_PartitionList.java`
 }
