@@ -4,9 +4,10 @@ problems, solutions and notes
 
 ### LeetCode
 
-Problems are provided by LeetCode:
+Problems are provided by:
 
-- Website: https://leetcode.com/
+- LeetCode: https://leetcode.com/
+- LintCode: https://www.lintcode.com/
 
 Solutions are provided by TECHBOW:
 
