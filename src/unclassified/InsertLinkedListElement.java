@@ -20,6 +20,11 @@ public class InsertLinkedListElement {
     newNode.next = pre.next;
     pre.next = newNode;
     return head;
+    /*
+     * time: O(n)
+     *
+     * space: O(1)
+     */
   }
 
   // Using a dummy node?
