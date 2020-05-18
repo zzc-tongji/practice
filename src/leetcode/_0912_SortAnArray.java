@@ -204,10 +204,10 @@ public class _0912_SortAnArray {
       // to ensure the posibility to hit `right`,
       // there is an `+ 1` at the end.
       Random rand = new Random();
-      int pivotRandIndex = left + rand.nextInt(right - left + 1);
-      int pivotValue = array[pivotRandIndex];
+      int pivotIndexRand = left + rand.nextInt(right - left + 1);
+      int pivotValue = array[pivotIndexRand];
       // swap the pivot to the end
-      swap(array, pivotRandIndex, right);
+      swap(array, pivotIndexRand, right);
       int leftI = left;
       int rightI = right - 1;
       while (leftI <= rightI) {
@@ -234,9 +234,9 @@ public class _0912_SortAnArray {
     private static int getPivotIndexSlowFast(int[] array, int left, int right) {
       // It can deal with arrays with duplicate values.
       Random rand = new Random();
-      int pivotRandIndex = left + rand.nextInt(right - left + 1);
-      int pivotValue = array[pivotRandIndex];
-      swap(array, pivotRandIndex, right);
+      int pivotIndexRand = left + rand.nextInt(right - left + 1);
+      int pivotValue = array[pivotIndexRand];
+      swap(array, pivotIndexRand, right);
       int slow = left;
       int fast = left;
       while (fast < right) {
