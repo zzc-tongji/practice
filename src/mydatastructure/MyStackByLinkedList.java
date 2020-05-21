@@ -38,6 +38,7 @@ public class MyStackByLinkedList<E> {
     return item;
   }
 
+  @SuppressWarnings("unchecked")
   public int search(Object o) {
     MyListNode<E> cur = head.next;
     int counter = 1;

@@ -41,6 +41,7 @@ public class MyStackByLinkedListWithoutDummyNode<E> {
     return item;
   }
 
+  @SuppressWarnings("unchecked")
   public int search(Object o) {
     MyListNode<E> cur = head;
     int counter = 1;

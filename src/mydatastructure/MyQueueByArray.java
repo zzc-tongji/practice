@@ -83,10 +83,12 @@ public class MyQueueByArray<E> {
     tail = size;
   }
 
+  @SuppressWarnings("unchecked")
   private E peakHelper() {
     return (E) data[head];
   }
 
+  @SuppressWarnings("unchecked")
   private E pollHelper() {
     E result = (E) data[head];
     head = plus(head, 1);

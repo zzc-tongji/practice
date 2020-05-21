@@ -22,6 +22,7 @@ public class MyStackByArray<E> {
     return top <= 0;
   }
 
+  @SuppressWarnings("unchecked")
   public E peak() {
     if (empty()) {
       throw new EmptyStackException();
@@ -29,6 +30,7 @@ public class MyStackByArray<E> {
     return (E) data[top - 1];
   }
 
+  @SuppressWarnings("unchecked")
   public E pop() {
     if (empty()) {
       throw new EmptyStackException();
@@ -47,6 +49,7 @@ public class MyStackByArray<E> {
     return item;
   }
 
+  @SuppressWarnings("unchecked")
   public int search(Object o) {
     for (int i = 0; i < top; i++) {
       if (((E) data[i]).equals((E) o)) {
