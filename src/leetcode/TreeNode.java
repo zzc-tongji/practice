@@ -33,9 +33,22 @@ public class TreeNode {
   public TreeNode left;
   public TreeNode right;
 
-  TreeNode(int x) {
-    val = x;
-    left = null;
-    right = null;
+  TreeNode() {
+    this(0, null, null, null);
+  }
+
+  TreeNode(int val) {
+    this(val, null, null, null);
+  }
+
+  TreeNode(int val, TreeNode left, TreeNode right) {
+    this(val, left, right, null);
+  }
+
+  TreeNode(int val, TreeNode left, TreeNode right, TreeNode parent) {
+    this.val = val;
+    this.left = left;
+    this.right = right;
+    this.parent = parent;
   }
 }
