@@ -1,4 +1,4 @@
-package mydatastructure;
+package mydatastructure.queue;
 
 import java.util.NoSuchElementException;
 
@@ -22,11 +22,12 @@ public class MyQueueByArray<E> {
   }
 
   public boolean add(E e) {
-    try {
-      offer(e);
-    } catch (IllegalStateException exception) {
-      return false;
+    if (size >= data.length) {
+      enlargeCapacity();
     }
+    data[tail] = e;
+    plus(tail, 1);
+    size += 1;
     return true;
   }
 
@@ -38,12 +39,11 @@ public class MyQueueByArray<E> {
   }
 
   public boolean offer(E e) {
-    if (size >= data.length) {
-      enlargeCapacity();
+    try {
+      add(e);
+    } catch (IllegalStateException exception) {
+      return false;
     }
-    data[tail] = e;
-    plus(tail, 1);
-    size += 1;
     return true;
   }
 

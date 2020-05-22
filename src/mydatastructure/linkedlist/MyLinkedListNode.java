@@ -1,0 +1,13 @@
+package mydatastructure.linkedlist;
+
+public class MyLinkedListNode<E> {
+  public E value;
+  public MyLinkedListNode<E> previous;
+  public MyLinkedListNode<E> next;
+
+  public MyLinkedListNode(E v) {
+    value = v;
+    previous = null;
+    next = null;
+  }
+}

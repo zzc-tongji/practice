@@ -1,49 +1,47 @@
-package mydatastructure;
+package mydatastructure.stack;
 
 import java.util.EmptyStackException;
+import mydatastructure.linkedlist.MyLinkedListNode;
 
-public class MyStackByLinkedListWithoutDummyNode<E> {
-  private MyListNode<E> head;
+public class MyStackByLinkedList<E> {
+  private MyLinkedListNode<E> head;
 
-  public MyStackByLinkedListWithoutDummyNode() {
-    head = null;
+  public MyStackByLinkedList() {
+    head = new MyLinkedListNode<E>(null);
+    head.next = null;
   }
 
   public boolean empty() {
-    return head == null;
+    return head.next == null;
   }
 
   public E peak() {
     if (empty()) {
       throw new EmptyStackException();
     }
-    return head.value;
+    return head.next.value;
   }
 
   public E pop() {
     if (empty()) {
       throw new EmptyStackException();
     }
-    MyListNode<E> result = head;
-    head = head.next;
+    MyLinkedListNode<E> result = head.next;
+    head.next = result.next;
     result.next = null;
     return result.value;
   }
 
   public E push(E item) {
-    MyListNode<E> newNode = new MyListNode<E>(item);
-    if (empty()) {
-      head = newNode;
-    } else {
-      newNode.next = head.next;
-      head.next = newNode;
-    }
+    MyLinkedListNode<E> newNode = new MyLinkedListNode<E>(item);
+    newNode.next = head.next;
+    head.next = newNode;
     return item;
   }
 
   @SuppressWarnings("unchecked")
   public int search(Object o) {
-    MyListNode<E> cur = head;
+    MyLinkedListNode<E> cur = head.next;
     int counter = 1;
     while (cur != null) {
       if (cur.value.equals((E) o)) {

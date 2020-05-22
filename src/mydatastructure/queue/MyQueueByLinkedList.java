@@ -1,14 +1,15 @@
-package mydatastructure;
+package mydatastructure.queue;
 
 import java.util.NoSuchElementException;
+import mydatastructure.linkedlist.MyLinkedListNode;
 
 public class MyQueueByLinkedList<E> {
-  private MyListNode<E> head;
-  private MyListNode<E> tail;
+  private MyLinkedListNode<E> head;
+  private MyLinkedListNode<E> tail;
 
   public MyQueueByLinkedList() {
-    head = new MyListNode<E>(null);
-    tail = new MyListNode<E>(null);
+    head = new MyLinkedListNode<E>(null);
+    tail = new MyLinkedListNode<E>(null);
     head.next = tail;
     tail.previous = head;
   }
@@ -25,7 +26,7 @@ public class MyQueueByLinkedList<E> {
   }
 
   public boolean offer(E e) {
-    MyListNode<E> newNode = new MyListNode<>(e);
+    MyLinkedListNode<E> newNode = new MyLinkedListNode<>(e);
     newNode.previous = tail.previous;
     newNode.next = tail;
     tail.previous = newNode;
@@ -58,7 +59,7 @@ public class MyQueueByLinkedList<E> {
   }
 
   private E pollHelper() {
-    MyListNode<E> result = head.next;
+    MyLinkedListNode<E> result = head.next;
     result.next.previous = head;
     head.next = result.next;
     result.previous = null;
