@@ -7,6 +7,8 @@ import java.util.Set;
 
 public class MyHeap<E extends Comparable<E>> {
   private List<E> data;
+  // Store a copy of elements in `HashSet`,
+  // in order to decrease time complexity of `contains`.
   private Set<E> dataSet;
 
   public MyHeap() {
@@ -16,6 +18,10 @@ public class MyHeap<E extends Comparable<E>> {
 
   public boolean contains(E e) {
     return dataSet.contains(e);
+  }
+
+  public boolean isEmpty() {
+    return data.isEmpty();
   }
 
   public boolean offer(E e) {
@@ -29,14 +35,14 @@ public class MyHeap<E extends Comparable<E>> {
   }
 
   public E peek() {
-    if (data.isEmpty()) {
+    if (isEmpty()) {
       return null;
     }
     return data.get(0);
   }
 
   public E poll() {
-    if (data.isEmpty()) {
+    if (isEmpty()) {
       return null;
     }
     E result = data.get(0);

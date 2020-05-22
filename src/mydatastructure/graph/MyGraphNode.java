@@ -9,8 +9,29 @@ public class MyGraphNode<V> {
   public V value;
   public Map<MyGraphNode<V>, Double> neighborList;
 
-  public MyGraphNode(V x) {
-    value = x;
+  @Override
+  @SuppressWarnings("unchecked")
+  public boolean equals(Object obj) {
+    if (obj == null) {
+      return false;
+    }
+    if (this == obj) {
+      return true;
+    }
+    if (getClass() != obj.getClass()) {
+      return false;
+    }
+    MyGraphNode<V> o = (MyGraphNode<V>) obj;
+    return value.equals(o.value);
+  }
+
+  @Override
+  public int hashCode() {
+    return value.hashCode();
+  }
+
+  public MyGraphNode(V v) {
+    value = v;
     neighborList = new HashMap<>();
   }
 
