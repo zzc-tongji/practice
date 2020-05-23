@@ -1,7 +1,5 @@
 package mydatastructure.queue;
 
-import java.util.NoSuchElementException;
-
 public class MyQueueByArray<E> {
   private static final int DEFAULT_INITIAL_CAPACITY = 16;
 
@@ -21,9 +19,13 @@ public class MyQueueByArray<E> {
     size = 0;
   }
 
-  public boolean add(E e) {
+  public boolean offer(E e) {
     if (size >= data.length) {
-      enlargeCapacity();
+      try {
+        enlargeCapacity();
+      } catch (IllegalStateException exception) {
+        return false;
+      }
     }
     data[tail] = e;
     plus(tail, 1);
@@ -31,41 +33,23 @@ public class MyQueueByArray<E> {
     return true;
   }
 
-  public E element() {
-    if (size <= 0) {
-      throw new NoSuchElementException();
-    }
-    return peakHelper();
-  }
-
-  public boolean offer(E e) {
-    try {
-      add(e);
-    } catch (IllegalStateException exception) {
-      return false;
-    }
-    return true;
-  }
-
+  @SuppressWarnings("unchecked")
   public E peek() {
     if (size <= 0) {
       return null;
     }
-    return peakHelper();
+    return (E) data[head];
   }
 
+  @SuppressWarnings("unchecked")
   public E poll() {
     if (size <= 0) {
       return null;
     }
-    return pollHelper();
-  }
-
-  public E remove() {
-    if (size <= 0) {
-      throw new NoSuchElementException();
-    }
-    return pollHelper();
+    E result = (E) data[head];
+    head = plus(head, 1);
+    size -= 1;
+    return result;
   }
 
   private void enlargeCapacity() {
@@ -81,19 +65,6 @@ public class MyQueueByArray<E> {
     data = newData;
     head = 0;
     tail = size;
-  }
-
-  @SuppressWarnings("unchecked")
-  private E peakHelper() {
-    return (E) data[head];
-  }
-
-  @SuppressWarnings("unchecked")
-  private E pollHelper() {
-    E result = (E) data[head];
-    head = plus(head, 1);
-    size -= 1;
-    return result;
   }
 
   private int plus(int index, int offset) {

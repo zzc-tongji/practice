@@ -1,6 +1,5 @@
 package mydatastructure.queue;
 
-import java.util.NoSuchElementException;
 import mydatastructure.linkedlist.MyLinkedListNode;
 
 public class MyQueueByLinkedList<E> {
@@ -12,17 +11,6 @@ public class MyQueueByLinkedList<E> {
     tail = new MyLinkedListNode<E>(null);
     head.next = tail;
     tail.previous = head;
-  }
-
-  public boolean add(E e) {
-    return offer(e);
-  }
-
-  public E element() {
-    if (head.next == tail) {
-      throw new NoSuchElementException();
-    }
-    return peakHelper();
   }
 
   public boolean offer(E e) {
@@ -37,28 +25,13 @@ public class MyQueueByLinkedList<E> {
     if (head.next == tail) {
       return null;
     }
-    return peakHelper();
+    return head.next.value;
   }
 
   public E poll() {
     if (head.next == tail) {
       return null;
     }
-    return pollHelper();
-  }
-
-  public E remove() {
-    if (head.next == tail) {
-      throw new NoSuchElementException();
-    }
-    return pollHelper();
-  }
-
-  private E peakHelper() {
-    return head.next.value;
-  }
-
-  private E pollHelper() {
     MyLinkedListNode<E> result = head.next;
     result.next.previous = head;
     head.next = result.next;
