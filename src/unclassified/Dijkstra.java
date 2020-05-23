@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import mydatastructure.heap.MyHeap;
+import mydatastructure.priorityqueue.MyPriorityQueueByArrayList;
 
 public class Dijkstra {
   public static void main(String[] args) {
@@ -57,7 +57,7 @@ public class Dijkstra {
   }
 
   private static Set<MyGraphNodeDijkstra<Integer>> dijistra(MyGraphNodeDijkstra<Integer> node) {
-    MyHeap<MyGraphNodeDijkstra<Integer>> heap = new MyHeap<>();
+    MyPriorityQueueByArrayList<MyGraphNodeDijkstra<Integer>> heap = new MyPriorityQueueByArrayList<>();
     MyGraphNodeDijkstra<Integer> cur = null;
     Set<MyGraphNodeDijkstra<Integer>> result = new HashSet<>();
     // BFS

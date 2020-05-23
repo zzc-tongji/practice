@@ -1,4 +1,4 @@
-package mydatastructure.heap;
+package mydatastructure.priorityqueue;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -6,18 +6,18 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public class MyHeap<E extends Comparable<E>> {
+public class MyPriorityQueueByArrayList<E extends Comparable<E>> {
   private List<E> data;
   // Store a copy of elements in `HashSet`,
   // in order to decrease time complexity of `contains`.
   private Set<E> dataSet;
   private Comparator<E> comparator;
 
-  public MyHeap() {
+  public MyPriorityQueueByArrayList() {
     this(null);
   }
 
-  public MyHeap(Comparator<E> c) {
+  public MyPriorityQueueByArrayList(Comparator<E> c) {
     data = new ArrayList<>();
     dataSet = new HashSet<>();
     comparator = c;
