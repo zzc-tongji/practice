@@ -50,7 +50,7 @@ public class _0020_ValidParentheses {
   }
 
   public boolean isValid(String s) {
-    System.out.println("Template");
+    // TODO
     return false;
     /*
      * time: O(1)

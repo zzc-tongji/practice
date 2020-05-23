@@ -1,6 +1,5 @@
 package leetcode;
 
-import java.util.Comparator;
 import java.util.PriorityQueue;
 import java.util.Queue;
 import java.util.Random;
@@ -101,7 +100,9 @@ public class _0215_KthLargestElementInAnArray {
     if (nums.length <= 1) {
       return nums[0];
     }
-    Queue<Integer> maxHeap = new PriorityQueue<>(new IntegerComparator());
+    Queue<Integer> maxHeap = new PriorityQueue<>((Integer o1, Integer o2) -> {
+      return o2 - o1;
+    });
     for (int i = 0; i < nums.length; i++) {
       maxHeap.add(nums[i]);
     }
@@ -115,13 +116,6 @@ public class _0215_KthLargestElementInAnArray {
      *
      * space: O(n)
      */
-  }
-
-  class IntegerComparator implements Comparator<Integer> {
-    @Override
-    public int compare(Integer o1, Integer o2) {
-      return o1 > o2 ? -1 : 1;
-    }
   }
 
   public int findKthLargest2(int[] nums, int k) {

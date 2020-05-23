@@ -65,6 +65,7 @@ public class _0785_IsGraphBipartite {
   }
 
   public boolean isBipartite(int[][] graph) {
+    // TODO
     return false;
     /*
      * time: O(1)
