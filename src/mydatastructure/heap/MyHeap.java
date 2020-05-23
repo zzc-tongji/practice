@@ -1,6 +1,7 @@
 package mydatastructure.heap;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -10,10 +11,16 @@ public class MyHeap<E extends Comparable<E>> {
   // Store a copy of elements in `HashSet`,
   // in order to decrease time complexity of `contains`.
   private Set<E> dataSet;
+  private Comparator<E> comparator;
 
   public MyHeap() {
+    this(null);
+  }
+
+  public MyHeap(Comparator<E> c) {
     data = new ArrayList<>();
     dataSet = new HashSet<>();
+    comparator = c;
   }
 
   public boolean contains(E e) {
@@ -69,8 +76,14 @@ public class MyHeap<E extends Comparable<E>> {
     int i = k;
     while (i > 0) {
       parent = (i - 1) / 2;
-      if (data.get(i).compareTo(data.get(parent)) > 0) {
-        break;
+      if (comparator != null) {
+        if (comparator.compare(data.get(parent), data.get(i)) < 0) {
+          break;
+        }
+      } else {
+        if (data.get(parent).compareTo(data.get(i)) < 0) {
+          break;
+        }
       }
       swap(i, parent);
       i = parent;
@@ -86,8 +99,14 @@ public class MyHeap<E extends Comparable<E>> {
         child = i * 2 + 2; // right child
       }
       // min-value child
-      if (data.get(child).compareTo(data.get(i)) > 0) {
-        break;
+      if (comparator != null) {
+        if (comparator.compare(data.get(i), data.get(child)) < 0) {
+          break;
+        }
+      } else {
+        if (data.get(i).compareTo(data.get(child)) < 0) {
+          break;
+        }
       }
       swap(i, child);
       i = child;
