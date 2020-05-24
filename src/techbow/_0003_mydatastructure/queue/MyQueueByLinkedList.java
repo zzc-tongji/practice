@@ -1,6 +1,6 @@
-package mydatastructure.queue;
+package techbow._0003_mydatastructure.queue;
 
-import mydatastructure.linkedlist.MyLinkedListNode;
+import techbow._0003_mydatastructure.linkedlist.MyLinkedListNode;
 
 public class MyQueueByLinkedList<E> {
   private MyLinkedListNode<E> head;

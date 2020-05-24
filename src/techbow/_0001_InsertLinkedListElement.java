@@ -1,9 +1,13 @@
-package unclassified;
+package techbow;
 
 import leetcode.ListNode;
 
-public class InsertLinkedListElement {
-  public ListNode insertElement(ListNode head, int val) {
+public class _0001_InsertLinkedListElement {
+  public static void main(String[] args) {
+    System.out.println("Hello world.");
+  }
+
+  public static ListNode insertElement(ListNode head, int val) {
     // without using dummy node
     //
     // main

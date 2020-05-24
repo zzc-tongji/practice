@@ -1,4 +1,4 @@
-package geometry;
+package unclassified.geometry;
 
 public interface TwoDimensionalGeometry {
   public abstract int edgeNumber();

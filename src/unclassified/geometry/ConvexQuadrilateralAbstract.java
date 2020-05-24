@@ -1,4 +1,4 @@
-package geometry;
+package unclassified.geometry;
 
 public abstract class ConvexQuadrilateralAbstract implements TwoDimensionalGeometry {
   public abstract String classify();

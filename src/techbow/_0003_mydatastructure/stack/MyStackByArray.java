@@ -1,4 +1,4 @@
-package mydatastructure.stack;
+package techbow._0003_mydatastructure.stack;
 
 import java.util.Arrays;
 import java.util.EmptyStackException;

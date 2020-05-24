@@ -1,4 +1,4 @@
-package geometry;
+package unclassified.geometry;
 
 public class ConvexQuadrilateral extends ConvexQuadrilateralAbstract {
   static enum Classification {

@@ -1,4 +1,4 @@
-package unclassified;
+package techbow;
 
 import java.util.HashMap;
 import java.util.HashSet;
@@ -7,9 +7,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import mydatastructure.priorityqueue.MyPriorityQueueByArrayList;
+import techbow._0003_mydatastructure.priorityqueue.MyPriorityQueueByArrayList;
 
-public class Dijkstra {
+public class _0004_Dijkstra {
   public static void main(String[] args) {
     // create
     //

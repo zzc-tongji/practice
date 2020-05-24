@@ -1,8 +1,8 @@
-package unclassified;
+package techbow;
 
 import leetcode.TreeNode;
 
-public class PartTreeOfAnotherTree {
+public class _0002_PartTreeOfAnotherTree {
   public boolean isParttree(TreeNode largeTree, TreeNode smallTree) {
     // Check whether `smallTree` is a part of `largeTree`.
     //

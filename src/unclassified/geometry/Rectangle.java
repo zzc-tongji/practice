@@ -1,4 +1,4 @@
-package geometry;
+package unclassified.geometry;
 
 public class Rectangle extends Parallelogram {
   @Override

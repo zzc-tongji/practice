@@ -1,4 +1,4 @@
-package mydatastructure.priorityqueue;
+package techbow._0003_mydatastructure.priorityqueue;
 
 import java.util.ArrayList;
 import java.util.Comparator;

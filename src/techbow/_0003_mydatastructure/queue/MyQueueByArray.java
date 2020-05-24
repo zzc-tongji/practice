@@ -1,4 +1,4 @@
-package mydatastructure.queue;
+package techbow._0003_mydatastructure.queue;
 
 public class MyQueueByArray<E> {
   private static final int DEFAULT_INITIAL_CAPACITY = 16;

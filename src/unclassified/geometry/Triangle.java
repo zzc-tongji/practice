@@ -1,4 +1,4 @@
-package geometry;
+package unclassified.geometry;
 
 public final class Triangle implements TwoDimensionalGeometry {
   private double angleA;

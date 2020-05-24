@@ -1,7 +1,8 @@
-package mydatastructure.stack;
+package techbow._0003_mydatastructure.stack;
 
 import java.util.EmptyStackException;
-import mydatastructure.linkedlist.MyLinkedListNode;
+
+import techbow._0003_mydatastructure.linkedlist.MyLinkedListNode;
 
 public class MyStackByLinkedList<E> {
   private MyLinkedListNode<E> head;

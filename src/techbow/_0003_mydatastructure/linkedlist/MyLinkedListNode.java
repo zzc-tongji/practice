@@ -1,4 +1,4 @@
-package mydatastructure.linkedlist;
+package techbow._0003_mydatastructure.linkedlist;
 
 public class MyLinkedListNode<E> {
   public E value;

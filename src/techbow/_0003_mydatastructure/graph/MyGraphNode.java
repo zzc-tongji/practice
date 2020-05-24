@@ -1,4 +1,4 @@
-package mydatastructure.graph;
+package techbow._0003_mydatastructure.graph;
 
 import java.util.HashMap;
 import java.util.Map;

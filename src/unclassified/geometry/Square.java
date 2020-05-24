@@ -1,4 +1,4 @@
-package geometry;
+package unclassified.geometry;
 
 public final class Square extends Rectangle {
   @Override
