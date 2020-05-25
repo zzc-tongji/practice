@@ -3,7 +3,7 @@ package leetcode;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
+/*
  * Definition for a binary tree node with link.
  */
 class GraphNode {

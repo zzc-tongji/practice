@@ -1,6 +1,6 @@
 package leetcode;
 
-/**
+/*
  * 0034. Find First and Last Position of Element in Sorted Array Medium
  *
  * Given an array of integers nums sorted in ascending order, find the starting

@@ -1,6 +1,6 @@
 package leetcode;
 
-/**
+/*
  * Definition for singly-linked list.
  */
 public class ListNode {

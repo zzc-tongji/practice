@@ -3,7 +3,7 @@ package leetcode;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
+/*
  * 0938. Range Sum of BST
  *
  * Given the root node of a binary search tree, return the sum of values of all

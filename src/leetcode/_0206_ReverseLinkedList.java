@@ -1,6 +1,6 @@
 package leetcode;
 
-/**
+/*
  * 0206. Reverse Linked List
  *
  * Reverse a singly linked list.

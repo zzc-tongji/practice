@@ -1,6 +1,6 @@
 package leetcode;
 
-/**
+/*
  * 369. Plus One Linked List
  *
  * Given a non-negative integer represented as non-empty a singly linked list of

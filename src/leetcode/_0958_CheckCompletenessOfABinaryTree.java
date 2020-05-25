@@ -3,7 +3,7 @@ package leetcode;
 import java.util.LinkedList;
 import java.util.Queue;
 
-/**
+/*
  * 0958. Check Completeness of a Binary Tree
  *
  * Given a binary tree, determine if it is a complete binary tree.

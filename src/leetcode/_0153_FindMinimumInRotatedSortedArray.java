@@ -1,6 +1,6 @@
 package leetcode;
 
-/**
+/*
  * 0153. Find Minimum in Rotated Sorted Array
  *
  * Suppose an array sorted in ascending order is rotated at some pivot unknown

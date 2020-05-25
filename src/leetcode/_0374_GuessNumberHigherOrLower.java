@@ -1,6 +1,6 @@
 package leetcode;
 
-/**
+/*
  * 0374. Guess Number Higher or Lower Easy
  *
  * We are playing the Guess Game. The game is as follows:

@@ -1,6 +1,6 @@
 package leetcode;
 
-/**
+/*
  * 0704. Binary Search
  *
  * Given a sorted (in ascending order) integer array nums of n elements and a

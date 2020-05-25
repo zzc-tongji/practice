@@ -1,6 +1,6 @@
 package leetcode;
 
-/**
+/*
  * 0075. Sort Colors
  *
  * Given an array with n objects colored red, white or blue, sort them in-place

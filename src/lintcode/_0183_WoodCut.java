@@ -1,6 +1,6 @@
 package lintcode;
 
-/**
+/*
  * 0183. Wood Cut
  *
  * Description

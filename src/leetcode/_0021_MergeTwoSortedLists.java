@@ -1,6 +1,6 @@
 package leetcode;
 
-/**
+/*
  * 0021. Merge Two Sorted Lists
  *
  * Merge two sorted linked lists and return it as a new list. The new list

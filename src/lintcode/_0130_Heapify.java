@@ -1,6 +1,6 @@
 package lintcode;
 
-/**
+/*
  * 0130. Heapify
  *
  * Description

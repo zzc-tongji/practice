@@ -1,6 +1,6 @@
 package leetcode;
 
-/**
+/*
  * 0160. Intersection of Two Linked Lists
  *
  * Write a program to find the node at which the intersection of two singly

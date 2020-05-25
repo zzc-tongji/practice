@@ -11,7 +11,7 @@ public class ConvexQuadrilateral extends ConvexQuadrilateralAbstract {
       this.information = information;
     }
 
-    /**
+    /*
      * @return the information
      */
     public String getInformation() {
@@ -61,7 +61,7 @@ public class ConvexQuadrilateral extends ConvexQuadrilateralAbstract {
     setAngleListInRadian(angleListInRadian);
   }
 
-  /**
+  /*
    * @return the edgeList
    */
   public double[] getEdgeList() {
@@ -72,7 +72,7 @@ public class ConvexQuadrilateral extends ConvexQuadrilateralAbstract {
     return edgeList;
   }
 
-  /**
+  /*
    * @param edgeList the edgeList to set
    */
   public void setEdgeList(double[] edgeList) {
@@ -90,7 +90,7 @@ public class ConvexQuadrilateral extends ConvexQuadrilateralAbstract {
     }
   }
 
-  /**
+  /*
    * @return the angleListInRadian
    */
   public double[] getAngleListInRadian() {
@@ -101,7 +101,7 @@ public class ConvexQuadrilateral extends ConvexQuadrilateralAbstract {
     return angleListInRadian;
   }
 
-  /**
+  /*
    * @param angleListInRadian the angleListInRadian to set
    */
   public void setAngleListInRadian(double[] angleListInRadian) {

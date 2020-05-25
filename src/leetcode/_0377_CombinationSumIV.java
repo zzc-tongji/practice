@@ -1,6 +1,6 @@
 package leetcode;
 
-/**
+/*
  * 0377. Combination Sum IV
  *
  * Given an integer array with all positive numbers and no duplicates, find the

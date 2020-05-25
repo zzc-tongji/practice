@@ -1,6 +1,6 @@
 package leetcode;
 
-/**
+/*
  * 0237. Delete Node in a Linked List
  *
  * Write a function to delete a node (except the tail) in a singly linked list,

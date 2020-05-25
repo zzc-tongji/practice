@@ -2,7 +2,7 @@ package lintcode;
 
 import leetcode.ListNode;
 
-/**
+/*
  * 0228. Middle of Linked List
  *
  * Description

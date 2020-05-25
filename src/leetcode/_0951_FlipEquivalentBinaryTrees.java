@@ -1,6 +1,6 @@
 package leetcode;
 
-/**
+/*
  * 0951. Flip Equivalent Binary Trees
  *
  * For a binary tree T, we can define a flip operation as follows: choose any

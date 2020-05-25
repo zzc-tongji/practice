@@ -1,6 +1,6 @@
 package leetcode;
 
-/**
+/*
  * Definition for a binary tree node.
  *
  * Convert a binary tree to an array:

@@ -1,6 +1,6 @@
 package leetcode;
 
-/**
+/*
  * 0702. Search in a Sorted Array of Unknown Size
  *
  * Given an integer array sorted in ascending order, write a function to search

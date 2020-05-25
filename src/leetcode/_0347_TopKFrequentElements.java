@@ -1,6 +1,6 @@
 package leetcode;
 
-/**
+/*
  * 0347. Top K Frequent Elements
  *
  * Given a non-empty array of integers, return the k most frequent elements.

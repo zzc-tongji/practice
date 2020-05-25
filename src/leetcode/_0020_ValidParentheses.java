@@ -2,7 +2,7 @@ package leetcode;
 
 import java.util.Stack;
 
-/**
+/*
  * 0020. Valid Parentheses
  *
  * Given a string containing just the characters '(', ')', '{', '}', '[' and

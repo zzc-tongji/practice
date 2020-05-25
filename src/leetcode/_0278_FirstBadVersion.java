@@ -1,6 +1,6 @@
 package leetcode;
 
-/**
+/*
  * 0278. First Bad Version
  *
  * You are a product manager and currently leading a team to develop a new

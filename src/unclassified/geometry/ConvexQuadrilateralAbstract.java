@@ -15,7 +15,7 @@ public abstract class ConvexQuadrilateralAbstract implements TwoDimensionalGeome
     System.out.println("[constructor] ConvexQuadrilateralAbstract");
   }
 
-  /**
+  /*
    * @return the vertexNumber
    */
   public int getVertexNumber() {

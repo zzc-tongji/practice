@@ -1,6 +1,6 @@
 package leetcode;
 
-/**
+/*
  * 0070. Climbing Stairs
  *
  * You are climbing a stair case. It takes n steps to reach to the top.

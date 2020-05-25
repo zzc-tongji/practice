@@ -3,7 +3,7 @@ package leetcode;
 import java.util.ArrayList;
 import java.util.Random;
 
-/**
+/*
  * 0912. Sort an Array
  *
  * Given an array of integers nums, sort the array in ascending order.

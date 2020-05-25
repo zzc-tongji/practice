@@ -1,6 +1,6 @@
 package leetcode;
 
-/**
+/*
  * 0086. Partition List
  *
  * Given a linked list and a value x, partition it such that all nodes less than
