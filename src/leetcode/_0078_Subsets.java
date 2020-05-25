@@ -61,4 +61,37 @@ public class _0078_Subsets {
       subset.remove(subset.size() - 1);
     }
   }
+
+  public List<List<Integer>> subsets1(int[] nums) {
+    // corner case
+    List<List<Integer>> res = new ArrayList<>();
+    if (nums == null) {
+      return res;
+    }
+    if (nums.length == 0) {
+      res.add(new ArrayList<Integer>());
+      return res;
+    }
+    // dfs
+    dfs1(nums, 0, new ArrayList<Integer>(), res);
+    return res;
+    /*
+     * time: O(2 ^ n) = \sum_{i=0}^{n}C_{n}^{i}
+     *
+     * space: O(1)
+     */
+  }
+
+  private void dfs1(int[] nums, int index, ArrayList<Integer> subset, List<List<Integer>> res) {
+    if (index >= nums.length) {
+      res.add(new ArrayList<>(subset));
+      return;
+    }
+    //
+    subset.add(nums[index]);
+    dfs1(nums, index + 1, subset, res);
+    subset.remove(subset.size() - 1);
+    //
+    dfs1(nums, index + 1, subset, res);
+  }
 }
