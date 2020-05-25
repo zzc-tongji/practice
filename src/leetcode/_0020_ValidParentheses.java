@@ -1,5 +1,7 @@
 package leetcode;
 
+import java.util.Stack;
+
 /**
  * 0020. Valid Parentheses
  *
@@ -50,12 +52,45 @@ public class _0020_ValidParentheses {
   }
 
   public boolean isValid(String s) {
-    // TODO
+    Stack<Character> st = new Stack<>();
+    char c = '\u0000';
+    char c1 = '\u0000';
+    for (int i = 0; i < s.length(); i++) {
+      c = s.charAt(i);
+      if (c == '(' || c == '[' || c == '{') {
+        st.push(c);
+        continue;
+      }
+      if (c == ')' || c == ']' || c == '}') {
+        if (st.isEmpty()) {
+          // more right parentheses
+          return false;
+        }
+        c1 = st.pop();
+        if (c == ')' && c1 != '(') {
+          // not match
+          return false;
+        }
+        if (c == ']' && c1 != '[') {
+          // not match
+          return false;
+        }
+        if (c == '}' && c1 != '{') {
+          // not match
+          return false;
+        }
+        continue;
+      }
+    }
+    if (st.isEmpty()) {
+      // more right parentheses
+      return true;
+    }
     return false;
     /*
-     * time: O(1)
+     * time: O(n)
      *
-     * space: O(1)
+     * space: O(n)
      */
   }
 }
