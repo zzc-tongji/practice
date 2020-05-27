@@ -6,7 +6,7 @@ public class _0008_CheckUnique {
   }
 
   public boolean checkUnique(char[] chars) {
-    if (chars == null || chars.length <= 0) {
+    if (chars == null || chars.length <= 1) {
       return true;
     }
     int[] bitmap = new int[8];
