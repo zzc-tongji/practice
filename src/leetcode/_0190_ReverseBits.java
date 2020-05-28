@@ -43,8 +43,60 @@ public class _0190_ReverseBits {
 
   // you need treat n as an unsigned value
   public int reverseBits(int n) {
-    // TODO
-    return 0;
+    // swap
+    if (n == 0 || n == -1) {
+      return n;
+    }
+    int res = n;
+    for (int i = 0; i < 16; i++) {
+      res = swap(res, i, 31 - i);
+    }
+    return res;
+    /*
+     * time: O(1)
+     *
+     * space: O(1)
+     */
+  }
+
+  private int swap(int x, int i, int j) {
+    if (((x >>> i) & 1) != ((x >>> j) & 1)) {
+      int bitMask = (1 << i) | (1 << j);
+      x ^= bitMask; // Niubility!!!
+    }
+    return x;
+  }
+
+  public int reverseBits1(int n) {
+    // bitmap
+    if (n == 0 || n == -1) {
+      return n;
+    }
+    int res = 0;
+    for (int i = 0; i < 32; i++) {
+      if ((n & (1 << i)) != 0) {
+        res |= (Integer.MIN_VALUE >>> i);
+      }
+    }
+    return res;
+    /*
+     * time: O(1)
+     *
+     * space: O(1)
+     */
+  }
+
+  public int reverseBits2(int n) {
+    // reverse binary unsigned integer
+    if (n == 0 || n == -1) {
+      return n;
+    }
+    int res = 0;
+    for (int i = 0; i < 32; i++) {
+      res = (res << 1) | (n & 1); // res = res * 2 + n % 1
+      n >>>= 1; // n /= 2;
+    }
+    return res;
     /*
      * time: O(1)
      *

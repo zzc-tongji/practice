@@ -31,10 +31,25 @@ public class _0157_UniqueCharacters {
   }
 
   public boolean isUnique(String str) {
-    // TODO
-    return false;
+    if (str.length() <= 1) {
+      return true;
+    }
+    char[] chars = str.toCharArray();
+    int[] bitmap = new int[8];
+    int row = 0;
+    int column = 0;
+    for (int i = 0; i < chars.length; i++) {
+      row = chars[i] / 32;
+      column = chars[i] % 32;
+      if ((bitmap[row] & (1 << column)) != 0) {
+        return false;
+      } else {
+        bitmap[row] |= (1 << column);
+      }
+    }
+    return true;
     /*
-     * time: O(1)
+     * time: O(n)
      *
      * space: O(1)
      */
