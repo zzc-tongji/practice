@@ -34,6 +34,7 @@ public class _0010_RemoveCharsFromString {
   }
 
   public static char[] removeChar2(char[] s, char[] removed) {
+    // inplace, input changed
     if (s == null || s.length <= 0) {
       return s;
     }
