@@ -90,13 +90,4 @@ public class _0206_ReverseLinkedList {
      * space: O(1)
      */
   }
-
-  public void templateFunction() {
-    System.out.println("Template");
-    /*
-     * time: O(1)
-     *
-     * space: O(1)
-     */
-  }
 }
