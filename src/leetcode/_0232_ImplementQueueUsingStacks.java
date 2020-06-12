@@ -64,53 +64,28 @@ public class _0232_ImplementQueueUsingStacks {
   public _0232_ImplementQueueUsingStacks() {
     stackIn = new Stack<>();
     stackOut = new Stack<>();
-    /*
-     * time: O(1)
-     *
-     * space: O(1)
-     */
   }
 
   /** Push element x to the back of queue. */
   public void push(int x) {
     stackIn.push(x);
-    /*
-     * time: O(1)
-     *
-     * space: O(1)
-     */
   }
 
   /** Removes the element from in front of queue and returns that element. */
   public int pop() {
     shift();
     return stackOut.pop();
-    /*
-     * time: O(1)
-     *
-     * space: O(1)
-     */
   }
 
   /** Get the front element. */
   public int peek() {
     shift();
     return stackOut.peek();
-    /*
-     * time: O(1)
-     *
-     * space: O(1)
-     */
   }
 
   /** Returns whether the queue is empty. */
   public boolean empty() {
     return stackIn.isEmpty() && stackOut.isEmpty();
-    /*
-     * time: O(1)
-     *
-     * space: O(1)
-     */
   }
 
   private void shift() {
