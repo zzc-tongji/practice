@@ -24,10 +24,6 @@ package leetcode;
  * The result can be in any order.
  */
 public class _0349_IntersectionOfTwoArrays {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public int[] intersection(int[] nums1, int[] nums2) {
     return null;
     /*

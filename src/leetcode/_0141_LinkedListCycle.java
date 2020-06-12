@@ -46,10 +46,6 @@ package leetcode;
  * Can you solve it using O(1) (i.e. constant) memory?
  */
 public class _0141_LinkedListCycle {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public boolean hasCycle(ListNode head) {
     if (head == null || head.next == null) {
       return false;

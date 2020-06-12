@@ -31,10 +31,6 @@ package leetcode;
  * - S consists only of English lowercase letters.
  */
 public class _1047_RemoveAllAdjacentDuplicatesInString {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public String removeDuplicates(String S) {
     // TODO
     return "";

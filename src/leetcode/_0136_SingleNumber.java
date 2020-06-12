@@ -30,10 +30,6 @@ import java.util.Set;
  * Output: 4
  */
 public class _0136_SingleNumber {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public int singleNumber(int[] nums) {
     // sort and iterate
     if (nums == null || nums.length <= 0) {

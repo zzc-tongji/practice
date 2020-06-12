@@ -30,13 +30,6 @@ package leetcode;
  * - Could you come up with a one-pass algorithm using only constant space?
  */
 public class _0075_SortColors {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-
-    _0075_SortColors test = new _0075_SortColors();
-    test.sortColors1(new int[] { 2, 0, 2, 1, 1, 0 });
-  }
-
   public void sortColors(int[] nums) {
     // count sort
     if (nums == null || nums.length <= 0) {

@@ -42,10 +42,6 @@ import java.util.List;
  * ]
  */
 public class _0040_CombinationSumII {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public List<List<Integer>> combinationSum2(int[] candidates, int target) {
     // TODO
     return null;

@@ -34,10 +34,6 @@ package leetcode;
  * Output: 0
  */
 public class _0035_SearchInsertPosition {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public int searchInsert(int[] nums, int target) {
     // find the smallest - larger or equal - position
     //

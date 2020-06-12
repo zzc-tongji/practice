@@ -36,10 +36,6 @@ package leetcode;
  * Output: -1->0->3->4->5
  */
 public class _0147_InsertionSortList {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public ListNode insertionSortList(ListNode head) {
     if (head == null || head.next == null) {
       return head;

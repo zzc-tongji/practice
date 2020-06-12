@@ -40,10 +40,6 @@ package leetcode;
  * - Do not return anything from your function.
  */
 public class _0237_DeleteNodeInALinkedList {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public void deleteNode(ListNode node) {
     if (node == null) {
       return;

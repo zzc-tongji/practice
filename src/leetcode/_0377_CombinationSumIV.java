@@ -32,10 +32,6 @@ package leetcode;
  * cases.
  */
 public class _0377_CombinationSumIV {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public int combinationSum4(int[] nums, int target) {
     // TODO
     return 0;

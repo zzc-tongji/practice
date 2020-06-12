@@ -19,10 +19,6 @@ package leetcode;
  * Explanation: 342 + 465 = 807.
  */
 public class _0002_AddTwoNumbers {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
     ListNode l1p = l1;
     ListNode l2p = l2;

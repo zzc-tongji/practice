@@ -27,10 +27,6 @@ package leetcode;
  * Given target = 20, return false.
  */
 public class _0240_SearchA2DMatrixII {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public boolean searchMatrix(int[][] matrix, int target) {
     // quadrate search
     //

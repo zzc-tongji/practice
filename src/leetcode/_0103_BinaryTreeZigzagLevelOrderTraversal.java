@@ -31,10 +31,6 @@ import java.util.Stack;
  * ]
  */
 public class _0103_BinaryTreeZigzagLevelOrderTraversal {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
     // count size & reverse
     if (root == null) {

@@ -22,10 +22,6 @@ package leetcode;
  * Could you do this in one pass?
  */
 public class _0019_RemoveNthNodeFromEndOfList {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public ListNode removeNthFromEnd(ListNode head, int n) {
     ListNode pre = null;
     ListNode slow = head;

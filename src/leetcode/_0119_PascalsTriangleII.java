@@ -24,10 +24,6 @@ import java.util.List;
  * Could you optimize your algorithm to use only O(k) extra space?
  */
 public class _0119_PascalsTriangleII {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public List<Integer> getRow(int rowIndex) {
     // TODO
     return null;

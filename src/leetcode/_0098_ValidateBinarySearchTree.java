@@ -41,10 +41,6 @@ import java.util.List;
  * Explanation: The root node's value is 5 but its right child's value is 4.
  */
 public class _0098_ValidateBinarySearchTree {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   List<Integer> array;
   long prev;
 

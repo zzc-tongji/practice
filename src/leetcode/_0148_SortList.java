@@ -18,10 +18,6 @@ package leetcode;
  * Output: -1->0->3->4->5
  */
 public class _0148_SortList {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   /* merge sort */
 
   public ListNode sortList(ListNode head) {

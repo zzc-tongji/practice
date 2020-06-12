@@ -13,10 +13,6 @@ package leetcode;
  * Given 1->2->3->4, you should return the list as 2->1->4->3.
  */
 public class _0024_SwapNodesInPairs {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public ListNode swapPairs(ListNode head) {
     if (head == null || head.next == null) {
       return head;

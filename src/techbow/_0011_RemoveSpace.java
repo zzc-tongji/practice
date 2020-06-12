@@ -6,10 +6,6 @@ import java.util.Arrays;
  * Remove leading/trailing space and duplicate space with one remaining/
  */
 public class _0011_RemoveSpace {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public static char[] removeSpace(char[] s) {
     // inplace, input changed
     if (s == null || s.length <= 0) {

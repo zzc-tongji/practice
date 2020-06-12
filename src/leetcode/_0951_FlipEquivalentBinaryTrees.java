@@ -33,10 +33,6 @@ package leetcode;
  * - Each value in each tree will be a unique integer in the range [0, 99].
  */
 public class _0951_FlipEquivalentBinaryTrees {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public boolean flipEquiv(TreeNode root1, TreeNode root2) { // niu a niy
     // It is the same problem as "LintCode 470. Tweaked Identical Binary Tree"
     // which also named as "niu a niu".

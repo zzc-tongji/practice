@@ -26,10 +26,6 @@ package leetcode;
  * Output: 6
  */
 public class _0374_GuessNumberHigherOrLower extends GuessGame {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public int guessNumber(int n) {
     if (n <= 0) {
       return -1;

@@ -41,10 +41,6 @@ import java.util.Queue;
  * The tree will have between 1 and 100 nodes.
  */
 public class _0958_CheckCompletenessOfABinaryTree {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public boolean isCompleteTree(TreeNode root) {
     if (root == null) {
       throw new IllegalArgumentException("It is not a tree.");

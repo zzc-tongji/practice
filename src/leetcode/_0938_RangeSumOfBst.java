@@ -29,10 +29,6 @@ import java.util.List;
  * guaranteed to be less than 2^31.
  */
 public class _0938_RangeSumOfBst {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   List<Integer> array;
   int answer = 0;
 

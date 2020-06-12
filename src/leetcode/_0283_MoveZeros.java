@@ -19,10 +19,6 @@ package leetcode;
  * Minimize the total number of operations.
  */
 public class _0283_MoveZeros {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public void moveZeroes(int[] nums) {
     if (nums == null || nums.length <= 1) {
       return;

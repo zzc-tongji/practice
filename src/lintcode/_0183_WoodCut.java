@@ -46,10 +46,6 @@ package lintcode;
  * O(n log Len), where Len is the longest length of the wood.
  */
 public class _0183_WoodCut {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public int woodCut(int[] L, int k) {
     if (L == null || L.length <= 0) {
       return 0;

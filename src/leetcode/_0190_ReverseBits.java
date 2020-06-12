@@ -37,10 +37,6 @@ package leetcode;
  * integer -3 and the output represents the signed integer -1073741825.
  */
 public class _0190_ReverseBits {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   // you need treat n as an unsigned value
   public int reverseBits(int n) {
     // swap

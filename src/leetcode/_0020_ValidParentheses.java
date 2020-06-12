@@ -47,10 +47,6 @@ import java.util.Stack;
  * Output: true
  */
 public class _0020_ValidParentheses {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public boolean isValid(String s) {
     Stack<Character> st = new Stack<>();
     char c = '\u0000';

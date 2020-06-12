@@ -35,10 +35,6 @@ import java.util.List;
  * (where n = total nodes)?
  */
 public class _0272_ClosestBinarySearchTreeValueII {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public List<Integer> closestKValues(TreeNode root, double target, int k) {
     // TODO
     return null;

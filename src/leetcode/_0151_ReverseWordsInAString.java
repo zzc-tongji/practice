@@ -46,10 +46,6 @@ import java.util.Arrays;
  * For C programmers, try to solve it in-place in O(1) extra space.
  */
 public class _0151_ReverseWordsInAString {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-   }
-
   public String reverseWords(String s) {
     if (s == null || s.length() <= 0) {
       return s;

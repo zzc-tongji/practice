@@ -35,10 +35,6 @@ package leetcode;
  * 0 <= nums[i][j] <= 10^5
  */
 public class _0055_JumpGame {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public boolean canJump(int[] nums) {
     // [own]
     //

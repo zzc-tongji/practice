@@ -26,10 +26,6 @@ package leetcode;
  * changed.
  */
 public class _0025_ReverseNodesInKGroup {
-  public static void main(final String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public ListNode reverseKGroup(ListNode head, int k) {
     ListNode pre = head;
     int count = 0;

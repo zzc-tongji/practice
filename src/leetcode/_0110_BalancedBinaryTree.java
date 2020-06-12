@@ -37,10 +37,6 @@ package leetcode;
  * Return false.
  */
 public class _0110_BalancedBinaryTree {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public boolean isBalanced(TreeNode root) {
     if (root == null) {
       // LeetCode: Accept

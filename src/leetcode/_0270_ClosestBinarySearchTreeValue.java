@@ -26,10 +26,6 @@ package leetcode;
  * Output: 4
  */
 public class _0270_ClosestBinarySearchTreeValue {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public int closestValue(TreeNode root, double target) {
     if (root == null) {
       throw new IllegalArgumentException("It is not a tree.");

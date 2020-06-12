@@ -30,10 +30,6 @@ package leetcode;
  * - You can return the answer in any order.
  */
 public class _0347_TopKFrequentElements {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public int[] topKFrequent(int[] nums, int k) {
     // TODO
     return null;

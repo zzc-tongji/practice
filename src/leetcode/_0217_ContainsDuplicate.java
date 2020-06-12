@@ -27,10 +27,6 @@ package leetcode;
  * Output: true
  */
 public class _0217_ContainsDuplicate {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public boolean containsDuplicate(int[] nums) {
     // TODO
     return false;

@@ -62,10 +62,6 @@ package leetcode;
  * Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
  */
 public class _0013_RomanToInteger {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public int romanToInt(String s) {
     // TODO
     return 0;

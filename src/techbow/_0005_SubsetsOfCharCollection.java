@@ -4,10 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class _0005_SubsetsOfCharCollection {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public static List<String> subsets(char[] array) {
     // corner case
     List<String> res = new ArrayList<>();

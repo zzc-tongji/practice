@@ -4,10 +4,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class _0008_PositionalNotationConvertor {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public static int toDecimal(String input, int notation) {
     if (notation != 2 && notation != 8 && notation != 10 && notation != 16) {
       throw new IllegalArgumentException("Parameter `notation` should be 2, 8, 10 or 16.");

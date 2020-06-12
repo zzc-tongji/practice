@@ -24,10 +24,6 @@ package leetcode;
  * Note: Your solution should be in logarithmic time complexity.
  */
 public class _0172_FactorialTrailingZeroes {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public int trailingZeroes(int n) {
     // TODO
     return 0;

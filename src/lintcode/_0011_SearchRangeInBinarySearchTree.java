@@ -43,10 +43,6 @@ import leetcode.TreeNode;
  * [12,20,22] between 10 and 22
  */
 public class _0011_SearchRangeInBinarySearchTree {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   List<Integer> array;
 
   public List<Integer> searchRange(TreeNode root, int k1, int k2) {

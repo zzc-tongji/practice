@@ -30,10 +30,6 @@ package leetcode;
  * - The first node is considered odd, the second node even and so on ...
  */
 public class _0328_OddEvenLinkedList {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public ListNode oddEvenList(ListNode head) {
     // corner case: less or equal to 2 nodes
     if (head == null || head.next == null || head.next.next == null) {

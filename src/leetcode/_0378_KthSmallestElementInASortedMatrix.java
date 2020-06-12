@@ -31,10 +31,6 @@ import java.util.Set;
  * You may assume k is always valid, 1 ≤ k ≤ n ^ 2.
  */
 public class _0378_KthSmallestElementInASortedMatrix {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public int kthSmallest(int[][] matrix, int k) {
     int n = matrix.length;
     if (n <= 0 || k > n * n) {

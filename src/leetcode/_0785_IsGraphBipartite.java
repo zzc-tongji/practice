@@ -60,10 +60,6 @@ package leetcode;
  * graph[j].
  */
 public class _0785_IsGraphBipartite {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public boolean isBipartite(int[][] graph) {
     // TODO
     return false;

@@ -21,10 +21,6 @@ import java.util.Random;
  * Output: [0,0,1,1,2,5]
  */
 public class _0912_SortAnArray {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   private static class SelectionSort {
     private static void sort(int[] array) {
       if (array == null || array.length <= 1) {

@@ -31,10 +31,6 @@ package leetcode;
  * can’t invert a binary tree on a whiteboard so fuck off.
  */
 public class _0226_InvertBinaryTree {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public TreeNode invertTree(TreeNode root) {
     // revert from leaf to root
     if (root == null) {

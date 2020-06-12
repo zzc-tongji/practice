@@ -14,10 +14,6 @@ package leetcode;
  * Output: 1->4->3->2->5->NULL
  */
 public class _0092_ReverseLinkedListII {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public ListNode reverseBetween(ListNode head, int m, int n) {
     ListNode pre = null;
     ListNode cur = head;

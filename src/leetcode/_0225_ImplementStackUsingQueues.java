@@ -51,10 +51,6 @@ import java.util.Queue;
  * ```
  */
 public class _0225_ImplementStackUsingQueues {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   // dual queue, offer O(1) vs. poll O(n)
   Queue<Integer> queue;
   Queue<Integer> queueEmpty;

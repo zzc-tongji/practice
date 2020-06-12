@@ -50,10 +50,6 @@ package leetcode;
  * - s only contains lower case English letters.
  */
 public class _1209_RemoveAllAdjacentDuplicatesinStringII {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public String removeDuplicates(String s, int k) {
     // TODO
     return "";

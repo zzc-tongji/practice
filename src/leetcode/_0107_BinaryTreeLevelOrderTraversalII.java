@@ -30,10 +30,6 @@ import java.util.Queue;
  * ]
  */
 public class _0107_BinaryTreeLevelOrderTraversalII {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public List<List<Integer>> levelOrderBottom(TreeNode root) {
     // just output
     if (root == null) {

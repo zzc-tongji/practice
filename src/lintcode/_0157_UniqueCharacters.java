@@ -26,10 +26,6 @@ package lintcode;
  * What if you can not use additional data structures?
  */
 public class _0157_UniqueCharacters {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public boolean isUnique(String str) {
     if (str.length() <= 1) {
       return true;

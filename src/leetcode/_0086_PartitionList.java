@@ -16,10 +16,6 @@ package leetcode;
  * Output: 1->2->2->4->3->5
  */
 public class _0086_PartitionList {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public ListNode partition(ListNode head, int x) {
     if (head == null) {
       return head;

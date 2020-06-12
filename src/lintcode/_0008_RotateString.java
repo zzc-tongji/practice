@@ -67,10 +67,6 @@ package lintcode;
  * Rotate in-place with O(1) extra memory.
  */
 public class _0008_RotateString {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public void rotateString(char[] str, int offset) {
     if (str == null || str.length <= 0) {
       return;

@@ -51,10 +51,6 @@ import java.util.List;
  * - the answer is guaranteed to fit into signed 32-bit int
  */
 public class _0518_CoinChange2 {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public int change(int amount, int[] coins) {
     // LeetCode: Memory Limit Exceeded
     if (coins == null || coins.length <= 0) {

@@ -25,10 +25,6 @@ import java.util.List;
  *
  */
 public class _0046_Permutations {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public List<List<Integer>> permute(int[] nums) {
     if (nums == null || nums.length <= 0) {
       return new ArrayList<>();

@@ -32,10 +32,6 @@ package leetcode;
  * 3. The value of each element in nums will be in the range [-9999, 9999].
  */
 public class _0704_BinarySearch {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public int binarySearch(int[] nums, int target) {
     if (nums == null || nums.length <= 0) {
       return -1;

@@ -40,10 +40,6 @@ package leetcode;
  * Output: false
  */
 public class _0074_SearchA2DMatrix {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public boolean searchMatrix(int[][] matrix, int target) {
     // validate matrix
     if (matrix == null || matrix.length <= 0) {

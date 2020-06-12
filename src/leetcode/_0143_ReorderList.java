@@ -18,10 +18,6 @@ package leetcode;
  * Given 1->2->3->4->5, reorder it to 1->5->2->4->3.
  */
 public class _0143_ReorderList {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public void reorderList(ListNode head) {
     // corner case: less or equal to 2 nodes
     if (head == null || head.next == null || head.next.next == null) {

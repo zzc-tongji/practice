@@ -21,10 +21,6 @@ package leetcode;
  * Output: [-1,-1]
  */
 public class _0034_FindFirstAndLastPositionOfElementInSortedArray {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public int[] searchRange(int[] nums, int target) {
     // find first, find last
     if (nums == null || nums.length <= 0) {

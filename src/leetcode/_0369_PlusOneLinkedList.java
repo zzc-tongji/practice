@@ -19,10 +19,6 @@ package leetcode;
  * Output: [1,2,4]
  */
 public class _0369_PlusOneLinkedList {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public ListNode plusOne(ListNode head) {
     if (head == null) {
       return null;

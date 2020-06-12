@@ -22,10 +22,6 @@ package leetcode;
  * an integer.
  */
 public class _0179_LargestNumber {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public String largestNumber(int[] nums) {
     // TODO
     return "";

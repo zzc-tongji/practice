@@ -28,10 +28,6 @@ package leetcode;
  * Output: false
  */
 public class _0231_PowerofTwo {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public boolean isPowerOfTwo(int n) {
     // large => small
     if (n <= 0) {

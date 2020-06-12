@@ -17,10 +17,6 @@ package leetcode;
  * implement both?
  */
 public class _0206_ReverseLinkedList {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public ListNode reverseList(ListNode head) {
     if (head == null || head.next == null) {
       return head;

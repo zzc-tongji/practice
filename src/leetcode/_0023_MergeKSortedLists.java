@@ -15,10 +15,6 @@ package leetcode;
  * Output: 1->1->2->3->4->4->5->6
  */
 public class _0023_MergeKSortedLists {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public ListNode mergeKLists(ListNode[] lists) {
     // TODO
     return null;

@@ -31,10 +31,6 @@ package leetcode;
  * - Would allow duplicates affect the run-time complexity? How and why?
  */
 public class _0154_FindMinimumInRotatedSortedArrayII {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public int findMin(int[] nums) {
     if (nums == null || nums.length <= 0) {
       return -1;

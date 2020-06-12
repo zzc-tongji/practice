@@ -57,10 +57,6 @@ import java.util.Stack;
  * ```
  */
 public class _0155_MinStack {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   private Stack<Integer> s;
   private Stack<Integer> sMin;
 

@@ -33,10 +33,6 @@ package leetcode;
  * expected output (serialized tree format) as [], not null.
  */
 public class _0700_SearchInABinarySearchTree {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public TreeNode searchBST(TreeNode root, int val) {
     if (root == null) {
       return null;

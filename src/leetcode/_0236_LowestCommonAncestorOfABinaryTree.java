@@ -37,10 +37,6 @@ package leetcode;
  * values will exist in the binary tree.
  */
 public class _0236_LowestCommonAncestorOfABinaryTree {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
     // TODO
     return null;

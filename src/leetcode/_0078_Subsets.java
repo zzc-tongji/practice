@@ -29,10 +29,6 @@ import java.util.List;
  * ]
  */
 public class _0078_Subsets {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public List<List<Integer>> subsets(int[] nums) {
     // corner case
     List<List<Integer>> res = new ArrayList<>();

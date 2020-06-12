@@ -25,10 +25,6 @@ import java.util.Stack;
  * Follow up: Recursive solution is trivial, could you do it iteratively?
  */
 public class _0145_BinaryTreePostorderTraversal {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   private List<Integer> result = new ArrayList<>();
 
   public List<Integer> postorderTraversal(TreeNode root) {

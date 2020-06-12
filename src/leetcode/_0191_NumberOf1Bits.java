@@ -49,10 +49,6 @@ package leetcode;
  * If this function is called many times, how would you optimize it?
  */
 public class _0191_NumberOf1Bits {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   // you need to treat n as an unsigned value
   public int hammingWeight(int n) {
     if (n == 0) {

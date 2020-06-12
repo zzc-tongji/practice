@@ -23,10 +23,6 @@ package leetcode;
  * return its depth = 3.
  */
 public class _0104_MaximumDepthOfBinaryTree {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public int maxDepth(TreeNode root) { // getHeight
     if (root == null) {
       return 0;

@@ -25,10 +25,6 @@ package leetcode;
  * Output: [1,2,2,3,5,6]
  */
 public class _0088_MergeSortedArray {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public void merge(int[] nums1, int m, int[] nums2, int n) {
     if (nums1 == null || nums1.length <= 0) {
       return;

@@ -37,10 +37,6 @@ import java.util.List;
  * of integers). Please reload the code definition to get the latest changes.
  */
 public class _0658_FindKClosestElements {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public List<Integer> findClosestElements(int[] arr, int k, int x) {
     if (arr == null || arr.length <= 0) {
       return null;

@@ -27,10 +27,6 @@ import java.util.Random;
  * You may assume k is always valid, 1 ≤ k ≤ array's length.
  */
 public class _0215_KthLargestElementInAnArray {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public int findKthLargest(int[] nums, int k) {
     // quick selection
     if (nums == null || nums.length <= 0 || k < 1 || k > nums.length) {

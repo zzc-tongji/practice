@@ -23,10 +23,6 @@ package leetcode;
  * return its minimum depth = 2.
  */
 public class _0111_MinimumDepthOfBinaryTree {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public int minDepth(TreeNode root) {
     if (root == null) {
       return 0;

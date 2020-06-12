@@ -25,10 +25,6 @@ package leetcode;
  * Output: 0
  */
 public class _0153_FindMinimumInRotatedSortedArray {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public int findMin(int[] nums) {
     if (nums == null || nums.length <= 0) {
       return -1;

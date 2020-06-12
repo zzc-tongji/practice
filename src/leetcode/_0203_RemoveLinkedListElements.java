@@ -10,10 +10,6 @@ package leetcode;
  * Input: 1->2->6->3->4->5->6, val = 6 Output: 1->2->3->4->5
  */
 public class _0203_RemoveLinkedListElements {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public ListNode removeElements(ListNode head, int val) {
     if (head == null) {
       return null;

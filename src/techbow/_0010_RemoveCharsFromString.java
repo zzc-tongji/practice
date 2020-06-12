@@ -3,10 +3,6 @@ package techbow;
 import java.util.Arrays;
 
 public class _0010_RemoveCharsFromString {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public static String removeChar(String s, char[] removed) {
     if (s == null || s.length() <= 0) {
       return s;
@@ -60,7 +56,6 @@ public class _0010_RemoveCharsFromString {
      *
      * space: O(1)
      */
-
 
   }
 }

@@ -37,10 +37,6 @@ package leetcode;
  * 3. 2 steps + 1 step
  */
 public class _0070_ClimbingStairs {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public int climbStairs(int n) {
     // dynamic programming (DP) - save all historical/temperary results
     //

@@ -40,12 +40,6 @@ package lintcode;
  * O(n) time complexity
  */
 public class _0130_Heapify {
-  public static void main(String[] args) {
-    _0130_Heapify a = new _0130_Heapify();
-    int[] x = new int[] { 3, 2, 1, 4, 5 };
-    a.heapify1(x);
-  }
-
   public void heapify(int[] A) {
     if (A == null || A.length <= 1) {
       return;

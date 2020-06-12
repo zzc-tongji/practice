@@ -27,10 +27,6 @@ import java.util.Set;
  * it using only constant extra space complexity?
  */
 public class _0268_MissingNumber {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public int missingNumber(int[] nums) {
     if (nums == null || nums.length == 0) {
       throw new IllegalArgumentException("The array is empty.");

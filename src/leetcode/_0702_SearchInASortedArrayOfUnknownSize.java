@@ -35,10 +35,6 @@ package leetcode;
  * 2. The value of each element in the array will be in the range [-9999, 9999].
  */
 public class _0702_SearchInASortedArrayOfUnknownSize {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public int search(ArrayReader reader, int target) {
     // corner case
     if (reader == null) {

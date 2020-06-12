@@ -28,10 +28,6 @@ package leetcode;
  * Output: "0.(6)"
  */
 public class _0166_FractionToRecurringDecimal {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public String fractionToDecimal(int numerator, int denominator) {
     // TODO
     return "";

@@ -20,10 +20,6 @@ import java.util.List;
  * ]
  */
 public class _0022_GenerateParentheses {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public List<String> generateParenthesis(int n) {
     if (n <= 0) {
       return new ArrayList<>();

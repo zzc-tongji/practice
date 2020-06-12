@@ -28,10 +28,6 @@ import java.util.List;
  * Output: [[1,2,6], [1,3,5], [2,3,4]]
  */
 public class _0216_CombinationSumIII {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public List<List<Integer>> combinationSum3(int k, int n) {
     // TODO
     return null;

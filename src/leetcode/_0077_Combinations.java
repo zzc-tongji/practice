@@ -24,10 +24,6 @@ import java.util.List;
  * ]
  */
 public class _0077_Combinations {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public List<List<Integer>> combine(int n, int k) {
     // TODO
     return null;

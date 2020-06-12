@@ -62,10 +62,6 @@ package leetcode;
  * Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
  */
 public class _0012_IntegerToRoman {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public String intToRoman(int num) {
     String[] strs = { "M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I" };
     int[] numbers = { 1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1 };

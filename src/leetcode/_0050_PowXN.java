@@ -32,10 +32,6 @@ package leetcode;
  * - n is a 32-bit signed integer, within the range [− 2 ^ 31, 2 ^ 31 − 1]
  */
 public class _0050_PowXN {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public double myPow(double x, int n) {
     // If `n` is `Integer.MIN_VALUE`, `-n` will overflow.
     // So it is necessary to convert `n` from `int` to `long`.

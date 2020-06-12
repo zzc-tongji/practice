@@ -36,10 +36,6 @@ package leetcode;
  * Your solution should be in logarithmic complexity.
  */
 public class _0162_FindPeakElement {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public int findPeakElement(int[] nums) {
     if (nums == null || nums.length < 0) {
       return -1;

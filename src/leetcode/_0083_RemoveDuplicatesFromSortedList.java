@@ -19,10 +19,6 @@ package leetcode;
  * Output: 1->2->3
  */
 public class _0083_RemoveDuplicatesFromSortedList {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public ListNode deleteDuplicates(ListNode head) {
     if (head == null || head.next == null) {
       return head;

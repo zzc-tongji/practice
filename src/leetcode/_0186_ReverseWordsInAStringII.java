@@ -22,10 +22,6 @@ package leetcode;
  * - Follow up: Could you do it in-place without allocating extra space?
  */
 public class _0186_ReverseWordsInAStringII {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public void reverseWords(char[] s) {
     if (s == null || s.length <= 0) {
       return;

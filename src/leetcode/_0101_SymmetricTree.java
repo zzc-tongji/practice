@@ -25,10 +25,6 @@ package leetcode;
  * Bonus points if you could solve it both recursively and iteratively.
  */
 public class _0101_SymmetricTree {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public boolean isSymmetric(TreeNode root) {
     return root == null ? true : mirror(root.left, root.right);
     /*

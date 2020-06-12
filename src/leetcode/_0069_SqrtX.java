@@ -27,10 +27,6 @@ package leetcode;
  * is truncated, 2 is returned.
  */
 public class _0069_SqrtX {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public int mySqrt(int x) {
     // TODO
     return 0;

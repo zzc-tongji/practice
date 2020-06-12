@@ -22,10 +22,6 @@ import java.util.Stack;
  * Output: [1,2,3]
  */
 public class _0144_BinaryTreePreorderTraversal {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   private List<Integer> result = new ArrayList<>();
 
   public List<Integer> preorderTraversal(TreeNode root) {

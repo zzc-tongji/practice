@@ -34,10 +34,6 @@ import leetcode.ListNode;
  * iterating the linked list again?
  */
 public class _0228_MiddleOfLinkedList {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public ListNode middleNode(ListNode head) {
     if (head == null || head.next == null) {
       return head;

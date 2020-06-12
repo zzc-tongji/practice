@@ -29,10 +29,6 @@ package leetcode;
  * overflows.
  */
 public class _0007_ReverseInteger {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public int reverse(int x) {
     if (x >= -9 && x <= 9) {
       return x;

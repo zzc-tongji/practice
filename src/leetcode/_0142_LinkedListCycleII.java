@@ -49,10 +49,6 @@ package leetcode;
  * Can you solve it without using extra space?
  */
 public class _0142_LinkedListCycleII {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public ListNode detectCycle(ListNode head) {
     if (head == null || head.next == null) {
       return null;

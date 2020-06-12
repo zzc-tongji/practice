@@ -1,10 +1,6 @@
 package techbow;
 
 public class _0000_TemplateClass {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public static void templateFunction() {
     System.out.println("template function");
     /*

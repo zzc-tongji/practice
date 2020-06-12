@@ -68,10 +68,6 @@ package leetcode;
  * - Your code should preferably run in O(n) time and use only O(1) memory.
  */
 public class _0160_IntersectionOfTwoLinkedLists {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
     // Iterate `headA` and `headB` by `a` and `b` at the same time.
     //

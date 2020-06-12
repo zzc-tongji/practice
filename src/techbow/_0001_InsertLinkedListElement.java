@@ -3,10 +3,6 @@ package techbow;
 import leetcode.ListNode;
 
 public class _0001_InsertLinkedListElement {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public static ListNode insertElement(ListNode head, int val) {
     // without using dummy node
     //

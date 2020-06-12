@@ -53,10 +53,6 @@ import java.util.Stack;
  * ```
  */
 public class _0232_ImplementQueueUsingStacks {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   private Stack<Integer> stackIn;
   private Stack<Integer> stackOut;
 

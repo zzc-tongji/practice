@@ -40,10 +40,6 @@ package leetcode;
  * Output: false
  */
 public class _0100_SameTree {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public boolean isSameTree(TreeNode p, TreeNode q) {
     if (p == null && q == null) {
       return true;

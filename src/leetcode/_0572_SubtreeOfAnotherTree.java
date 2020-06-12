@@ -48,10 +48,6 @@ package leetcode;
  * Return false.
  */
 public class _0572_SubtreeOfAnotherTree {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public boolean isSubtree(TreeNode s, TreeNode t) {
     // check from root to leaf
     if (s == null) {

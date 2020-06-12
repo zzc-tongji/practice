@@ -5,16 +5,10 @@ package techbow;
  *
  * - only validate '(' and ')'
  * - at most there are n pairs of '()'.
+ *
+ * Solutions of LeetCode 22 are also correct.
  */
 public class _0006_ValidParentheses {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
-  /*
-   * Solutions of LeetCode 22 are also correct.
-   */
-
   public static boolean isValid(String s, int n) {
     int leftSoFar = 0;
     int rightSofar = 0;

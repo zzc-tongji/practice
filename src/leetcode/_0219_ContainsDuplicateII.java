@@ -26,10 +26,6 @@ package leetcode;
  * Output: false
  */
 public class _0219_ContainsDuplicateII {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-  }
-
   public boolean containsNearbyDuplicate(int[] nums, int k) {
     // TODO
     return false;

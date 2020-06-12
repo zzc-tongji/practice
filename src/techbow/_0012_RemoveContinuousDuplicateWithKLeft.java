@@ -1,10 +1,6 @@
 package techbow;
 
 public class _0012_RemoveContinuousDuplicateWithKLeft {
-  public static void main(String[] args) {
-    System.out.println(removeDuplicates("pbbcggttciiippooaais", 1));
-  }
-
   public static String removeDuplicates(String S, int k) {
     // range:
     //
