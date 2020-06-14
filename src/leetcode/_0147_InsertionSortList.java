@@ -46,7 +46,7 @@ public class _0147_InsertionSortList {
     ListNode cur = head.next;
     ListNode pre = head;
     while (cur != null) {
-      if (pre.val > cur.val) {
+      if (pre.val > cur.val) { // use `>` to keep sort stability
         ListNode temp = pickOff(pre, cur);
         insert(dummy, temp);
         cur = pre;
@@ -63,21 +63,27 @@ public class _0147_InsertionSortList {
   }
 
   private ListNode pickOff(ListNode pre, ListNode node) {
-    // pick off
+    // pick off `node`
     pre.next = node.next;
     node.next = null;
     return node;
   }
 
   public void insert(ListNode dummy, ListNode node) {
+    // find insertion point
+    //
+    // No null check needed since it is guaranteed by caller.
     ListNode pre = dummy;
     ListNode cur = dummy.next;
-    while (cur.val < node.val) {
+    while (cur.val <= node.val) { // use `<=` to keep sort stability
       pre = cur;
       cur = cur.next;
     }
-    // cur.val >= node.val
+    // insert before `cur`
     node.next = cur;
     pre.next = node;
   }
 }
+
+// More way to sort a linked list:
+// see `techbow._0013_Sort.linkedlist`.

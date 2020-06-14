@@ -36,64 +36,7 @@ public class _0021_MergeTwoSortedLists {
      * space: O(1)
      */
   }
-
-  public ListNode mergeTwoListsNoDummy(ListNode l1, ListNode l2) {
-    if (l1 == null) {
-      return l2;
-    }
-    if (l2 == null) {
-      return l1;
-    }
-    ListNode res;
-    ListNode l1p = l1;
-    ListNode l2p = l2;
-    if (l1.val < l2.val) {
-      res = l1;
-      l1p = l1.next;
-      l2p = l2;
-    } else {
-      res = l2;
-      l1p = l1;
-      l2p = l2.next;
-    }
-    ListNode cur = res;
-    while (l1p != null && l2p != null) {
-      if (l1p.val < l2p.val) {
-        cur.next = l1p;
-        l1p = l1p.next;
-      } else {
-        cur.next = l2p;
-        l2p = l2p.next;
-      }
-      cur = cur.next;
-    }
-    cur.next = l1p != null ? l1p : l2p;
-    return res;
-    /*
-     * time: O(n)
-     *
-     * space: O(1)
-     */
-  }
-
-  public ListNode mergeTwoListsRecursion(ListNode l1, ListNode l2) {
-    if (l1 == null) {
-      return l2;
-    }
-    if (l2 == null) {
-      return l1;
-    }
-    if (l1.val < l2.val) {
-      l1.next = mergeTwoListsRecursion(l1.next, l2);
-      return l1;
-    } else {
-      l2.next = mergeTwoListsRecursion(l1, l2.next);
-      return l2;
-    }
-    /*
-     * time: O(n)
-     *
-     * space: O(1)
-     */
-  }
 }
+
+// More way to merge two sorted linked list:
+// see `techbow._0013_Sort.linkedlist.Merge`.

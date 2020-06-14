@@ -18,8 +18,6 @@ package leetcode;
  * Output: -1->0->3->4->5
  */
 public class _0148_SortList {
-  /* merge sort */
-
   public ListNode sortList(ListNode head) {
     if (head == null || head.next == null) {
       return head;
@@ -50,35 +48,6 @@ public class _0148_SortList {
      */
   }
 
-  public ListNode sortList1(ListNode head) {
-    if (head == null || head.next == null) {
-      return head;
-    }
-    // use slow-fast node pointer to get middle point (`slow.next`)
-    //
-    // For a linked list with 2 nodes, `slow` will be the first node.
-    // So use the post-node of `slow` as the divider to avoid stack overflow.
-    ListNode slow = head;
-    ListNode fast = head.next;
-    while (fast != null && fast.next != null) {
-      slow = slow.next;
-      fast = fast.next.next;
-    }
-    // disconnect `l1` and `l2` below
-    ListNode post = slow.next;
-    slow.next = null;
-    // divide
-    ListNode l1 = sortList(head);
-    ListNode l2 = sortList(post);
-    // conquer
-    return merge(l1, l2);
-    /*
-     * time: O(n log n)
-     *
-     * space: O(1)
-     */
-  }
-
   private ListNode merge(ListNode l1, ListNode l2) {
     // similiar as file `_0021_MergeTwoSortedLists`
     ListNode dummy = new ListNode(0);
@@ -98,10 +67,7 @@ public class _0148_SortList {
     cur.next = l1p != null ? l1p : l2p;
     return dummy.next;
   }
-
-   /* quick sort */
-
-   // TODO
-
-   // similiar as file `_0086_PartitionList.java`
 }
+
+// More way to sort an linked list:
+// see `techbow._0013_Sort.linkedlist`.
