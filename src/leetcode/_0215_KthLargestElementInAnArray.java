@@ -50,7 +50,7 @@ public class _0215_KthLargestElementInAnArray {
         left = pivotI + 1;
       } else if (pivotI > k_) {
         right = pivotI - 1;
-      } else { // pivotLocation > k_
+      } else { // pivotI == k_
         return nums[pivotI];
       }
     }
@@ -87,6 +87,9 @@ public class _0215_KthLargestElementInAnArray {
     nums[i] = nums[j];
     nums[j] = temp;
   }
+
+  // More about quick selection:
+  // see `techbow._0014_QuickSelection`.
 
   public int findKthLargest1(int[] nums, int k) {
     // sort with heap
