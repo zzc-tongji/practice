@@ -30,7 +30,7 @@ import java.util.List;
  */
 public class _0118_PascalsTriangle {
   public List<List<Integer>> generate(int numRows) {
-    // [own]
+    // [me]
     //
     // if (numRows <= 0) {
     // throw new IllegalArgumentException();

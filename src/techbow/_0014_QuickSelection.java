@@ -67,7 +67,7 @@ public class _0014_QuickSelection {
   }
 
   public static int selectAdvance(int[] array, int k) {
-    // [own]
+    // [me]
     if (array == null || array.length <= 0 || k < 0 || k > array.length - 1) {
       throw new IllegalArgumentException();
     }
@@ -97,7 +97,7 @@ public class _0014_QuickSelection {
   }
 
   public static int relocateAdvance(int[] arr, int left, int right) {
-    // [own]
+    // [me]
     int pivotV = getPivotValue(arr, left, right);
     int pivotI = searchPivotIndex(arr, pivotV);
     return relocate(arr, left, right, pivotI);

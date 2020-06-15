@@ -4,7 +4,7 @@ import techbow._0014_QuickSelection;
 
 public class QuickSortAdvance {
   public static void sort(int[] array) {
-    // [own]
+    // [me]
     if (array == null || array.length <= 1) {
       return;
     }

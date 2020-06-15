@@ -36,7 +36,7 @@ package leetcode;
  */
 public class _0055_JumpGame {
   public boolean canJump(int[] nums) {
-    // [own]
+    // [me]
     //
     // LeetCode: Time Limit Exceeded
     if (nums == null || nums.length <= 0) {
