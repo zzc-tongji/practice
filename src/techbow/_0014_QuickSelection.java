@@ -105,7 +105,7 @@ public class _0014_QuickSelection {
 
   private static int getPivotValue(int[] arr, int left, int right) {
     // Split `arr[left:right]` to sub-arrays of 5 elements.
-    // Assume that each sub-arrays are sorted - every middle item acts as "median".
+    // Assume that every sub-arrays is sorted - every middle item acts as "median".
     int length = right - left + 1;
     if (length < 5) {
       return arr[left + (right - left) / 2];
