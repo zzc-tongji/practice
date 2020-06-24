@@ -14,7 +14,7 @@ public class _0011_RemoveSpace {
     int slow = 0;
     int fast = 0;
     while (fast < s.length) {
-      if (s[fast] == ' ' || (fast != 0 && s[fast - 1] == ' ')) {
+      if (s[fast] == ' ' && (fast == 0 || s[fast - 1] == ' ')) {
         // skip
       } else {
         s[slow] = s[fast];
@@ -45,7 +45,7 @@ public class _0011_RemoveSpace {
     int slow = 0;
     int fast = 0;
     while (fast < s.length()) {
-      if (c[fast] == ' ' || (fast != c.length - 1 && c[fast + 1] == ' ')) {
+      if (c[fast] == ' ' && (fast == c.length - 1 || c[fast + 1] == ' ')) {
         // skip
       } else {
         c[slow] = c[fast];
