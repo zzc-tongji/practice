@@ -37,7 +37,7 @@ public class MergeSort {
     while (leftI < leftResult.size() && rightI < rightResult.size()) {
       leftV = leftResult.get(leftI);
       rightV = rightResult.get(rightI);
-      if (leftV < rightV) {
+      if (leftV <= rightV) {
         result.add(leftV);
         leftI += 1;
       } else {
