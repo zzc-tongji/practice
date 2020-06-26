@@ -27,16 +27,17 @@ public class MergeSort {
 
   private static void merge(int[] array, int[] helper, int left, int mid, int right) {
     // copy
-    for (int i = left; i < right; i++) {
+    for (int i = left; i <= right; i++) {
       helper[i] = array[i];
     }
     int leftI = left;
     int rightI = mid + 1;
+    int offset = left;
     while (leftI <= mid && rightI <= right) {
-      if (helper[leftI] < helper[rightI]) {
+      if (helper[leftI] <= helper[rightI]) {
         // `left` is passed by value and not needed to be used in the future. So just
         // use it as insertion counter.
-        array[left] = helper[leftI];
+        array[offset] = helper[leftI];
         left += 1;
         leftI += 1;
       } else {
@@ -47,12 +48,12 @@ public class MergeSort {
     }
     // Don't worry about the sequence, since only one "while" will be executed.
     while (leftI <= mid) {
-      array[left] = helper[leftI];
+      array[offset] = helper[leftI];
       left += 1;
       leftI += 1;
     }
     while (rightI <= right) {
-      array[leftI] = helper[rightI];
+      array[offset] = helper[rightI];
       left += 1;
       rightI += 1;
     }
