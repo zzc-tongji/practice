@@ -1,6 +1,12 @@
 package techbow._0013_Sort.array;
 
 public class MergeSort {
+  public static void main(String[] args) {
+    int[] array = new int[] { 9, 7, 5, 3, 1 };
+    sort(array);
+    return;
+  }
+
   public static void sort(int[] array) {
     if (array == null || array.length <= 1) {
       return;
@@ -38,23 +44,23 @@ public class MergeSort {
         // `left` is passed by value and not needed to be used in the future. So just
         // use it as insertion counter.
         array[offset] = helper[leftI];
-        left += 1;
+        offset += 1;
         leftI += 1;
       } else {
-        array[leftI] = helper[rightI];
-        left += 1;
+        array[offset] = helper[rightI];
+        offset += 1;
         rightI += 1;
       }
     }
     // Don't worry about the sequence, since only one "while" will be executed.
     while (leftI <= mid) {
       array[offset] = helper[leftI];
-      left += 1;
+      offset += 1;
       leftI += 1;
     }
     while (rightI <= right) {
       array[offset] = helper[rightI];
-      left += 1;
+      offset += 1;
       rightI += 1;
     }
   }
