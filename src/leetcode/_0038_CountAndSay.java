@@ -53,11 +53,6 @@ import java.util.Arrays;
 
 // @lc code=start
 class _0038_CountAndSay {
-  public static void main(String[] args) {
-    (new _0038_CountAndSay()).countAndSay(4);
-    return;
-  }
-
   public String countAndSay(int n) {
     if (n <= 1) {
       return "1";
