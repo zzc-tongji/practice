@@ -37,10 +37,6 @@ import java.util.List;
  * Coud you solve it without converting the integer to a string?
  */
 public class _0009_PalindromeNumber {
-  public static void main(String[] args) {
-    (new _0009_PalindromeNumber()).isPalindrome(1410110141);
-  }
-
   public boolean isPalindrome(int x) {
     // [me]
     if (x < 0) {

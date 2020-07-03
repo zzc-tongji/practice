@@ -29,11 +29,6 @@ package leetcode;
  * string. This is consistent to C's strstr() and Java's indexOf().
  */
 public class _0028_ImplementStrstr {
-  public static void main(String[] args) {
-    (new _0028_ImplementStrstr()).strStr1("mississippi", "issi");
-    return;
-  }
-
   public int strStr(String haystack, String needle) {
     // corner case
     if (haystack == null || needle == null) {
