@@ -38,7 +38,7 @@ package leetcode;
 
 public class _0091_DecodeWays {
   public int numDecodings(String s) {
-    // [own]
+    // [me]
     if (s == null || s.length() <= 0) {
       return 0;
     }

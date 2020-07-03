@@ -48,7 +48,7 @@ public class _0017_PermutationsOfCharacterCollectionWithDuplicate {
   }
 
   public static List<String> permute1(char[] array) {
-    // [own]
+    // [me]
     if (array == null || array.length <= 0) {
       return new ArrayList<>();
     }

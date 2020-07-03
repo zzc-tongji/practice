@@ -58,7 +58,7 @@ public class _0015_Encoding {
   }
 
   public static char[] encode1(char[] s) {
-    // [own]
+    // [me]
     //
     // corner case
     if (s == null || s.length < 0) {

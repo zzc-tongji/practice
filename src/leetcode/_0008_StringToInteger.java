@@ -77,7 +77,7 @@ package leetcode;
  */
 public class _0008_StringToInteger {
   public int myAtoi(String str) {
-    // [own]
+    // [me]
     //
     // corner case
     if (str == null) {
