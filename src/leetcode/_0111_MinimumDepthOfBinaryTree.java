@@ -38,7 +38,7 @@ public class _0111_MinimumDepthOfBinaryTree {
     // return Math.min(leftDepth, rightDepth) + 1;
     return (root.left == null || root.right == null) ? leftDepth + rightDepth + 1 : Math.min(leftDepth, rightDepth) + 1;
     /*
-     * time: O(n), master theory
+     * time: worst = O(n ^ 2), average = best = O(n), master theory
      *
      * space: O(1)
      */

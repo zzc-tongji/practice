@@ -38,6 +38,27 @@ import java.util.List;
  */
 public class _0009_PalindromeNumber {
   public boolean isPalindrome(int x) {
+    if (x < 0) {
+      return false;
+    }
+    if (x >= 0 && x <= 9) {
+      return true;
+    }
+    int revertedNumber = 0;
+    while (x > revertedNumber) {
+      revertedNumber = revertedNumber * 10 + x % 10;
+      x /= 10;
+    }
+    // even bit number || odd bit number
+    return x == revertedNumber || x == revertedNumber / 10;
+    /*
+     * time: O(log n)
+     *
+     * space: O(n)
+     */
+  }
+
+  public boolean isPalindrome1(int x) {
     // [me]
     if (x < 0) {
       return false;
