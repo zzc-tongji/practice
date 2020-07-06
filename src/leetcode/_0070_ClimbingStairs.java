@@ -38,27 +38,16 @@ package leetcode;
  */
 public class _0070_ClimbingStairs {
   public int climbStairs(int n) {
-    // dynamic programming (DP) - save all historical/temperary results
-    //
-    // Return `int` may cause overflow. Its better to return `long`.
+    // recursion (LeetCode: Time Limit Exceeded)
     if (n < 0) {
       return -1;
     }
     if (n == 0 || n == 1) {
       return 1;
     }
-    int pre = 1;
-    int preOfPre = 1;
-    int cur = 0;
-    for (int i = 2; i <= n; i++) {
-      cur = pre + preOfPre;
-      // prepare for next calculation
-      preOfPre = pre;
-      pre = cur;
-    }
-    return cur;
+    return climbStairs2(n - 1) + climbStairs2(n - 2);
     /*
-     * time: O(n)
+     * time: O(n ^ 2)
      *
      * space: O(1)
      */
@@ -81,16 +70,27 @@ public class _0070_ClimbingStairs {
   }
 
   public int climbStairs2(int n) {
-    // recursion (LeetCode: Time Limit Exceeded)
+    // dynamic programming (DP) - save all historical/temperary results
+    //
+    // Return `int` may cause overflow. Its better to return `long`.
     if (n < 0) {
       return -1;
     }
     if (n == 0 || n == 1) {
       return 1;
     }
-    return climbStairs2(n - 1) + climbStairs2(n - 2);
+    int pre = 1;
+    int preOfPre = 1;
+    int cur = 0;
+    for (int i = 2; i <= n; i++) {
+      cur = pre + preOfPre;
+      // prepare for next calculation
+      preOfPre = pre;
+      pre = cur;
+    }
+    return cur;
     /*
-     * time: O(n ^ 2)
+     * time: O(n)
      *
      * space: O(1)
      */

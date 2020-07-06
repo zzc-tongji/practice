@@ -1,5 +1,6 @@
 package leetcode;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -25,8 +26,35 @@ import java.util.List;
  */
 public class _0119_PascalsTriangleII {
   public List<Integer> getRow(int rowIndex) {
-    // TODO
-    return null;
+    // corner case
+    if (rowIndex < 0) {
+      throw new IllegalArgumentException();
+    }
+    // `rowIndex` row contains `rowIndex + 1` elements.
+    List<Integer> res = new ArrayList<>();
+    for (int i = 0; i < rowIndex + 1; i++) {
+      res.add(0);
+    }
+    // corner case
+    if (rowIndex == 0) {
+      res.set(0, 1);
+      return res;
+    }
+    if (rowIndex == 1) {
+      res.set(0, 1);
+      res.set(1, 1);
+      return res;
+    }
+    // main
+    res.set(0, 1);
+    res.set(1, 1);
+    for (int i = 2; i <= rowIndex; i++) {
+      // Worry about override? Do it from right to left.
+      for (int j = i; j >= 1; j--) {
+        res.set(j, res.get(j - 1) + res.get(j));
+      }
+    }
+    return res;
     /*
      * time: O(n ^ 2)
      *
