@@ -1,8 +1,6 @@
-package leetcode._0000_TemplateClass;
+package lintcode._0000_TemplateClass;
 
-// @lc app=leetcode id=0 lang=java
-// @lc code=start
-public class Solution1 {
+public class Component {
   /*
    * (description)
    *
@@ -16,7 +14,8 @@ public class Solution1 {
   }
 
   public static void main(String[] args) { // not necessary
-    System.out.println("main");
+
   }
 }
-// @lc code=end
+
+// not necessary

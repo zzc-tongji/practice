@@ -1,4 +1,4 @@
-package leetcode._0000_TemplateClass;
+package lintcode._0000_TemplateClass;
 
 /*
  * 0000. Template Class
@@ -6,8 +6,6 @@ package leetcode._0000_TemplateClass;
  * (problem description)
  */
 
-// @lc app=leetcode id=0 lang=java
-// @lc code=start
 public class Solution {
   /*
    * (description)
@@ -25,4 +23,3 @@ public class Solution {
     System.out.println("main");
   }
 }
-// @lc code=end

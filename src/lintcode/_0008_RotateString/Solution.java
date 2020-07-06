@@ -1,4 +1,4 @@
-package lintcode;
+package lintcode._0008_RotateString;
 
 /*
  * 0008. Rotate String
@@ -66,7 +66,14 @@ package lintcode;
  *
  * Rotate in-place with O(1) extra memory.
  */
-public class _0008_RotateString {
+
+public class Solution {
+  /*
+   * time: O(n)
+   *
+   * space: O(1)
+   */
+
   public void rotateString(char[] str, int offset) {
     if (str == null || str.length <= 0) {
       return;

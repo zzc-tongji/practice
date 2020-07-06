@@ -1,4 +1,4 @@
-package lintcode;
+package lintcode._0130_Heapify;
 
 /*
  * 0130. Heapify
@@ -39,7 +39,14 @@ package lintcode;
  *
  * O(n) time complexity
  */
-public class _0130_Heapify {
+
+public class Solution {
+  /*
+   * time: average = O(n), worst = O(n log n)
+   *
+   * space: O(1)
+   */
+
   public void heapify(int[] A) {
     if (A == null || A.length <= 1) {
       return;
@@ -48,11 +55,6 @@ public class _0130_Heapify {
     for (int i = 1; i < A.length; i++) { // `int i = 0` is also OK.
       siftUp(A, i);
     }
-    /*
-     * time: average = O(n), worst = O(n log n)
-     *
-     * space: O(1)
-     */
   }
 
   private void siftUp(int[] A, int k) {
@@ -65,38 +67,6 @@ public class _0130_Heapify {
       }
       swap(A, i, parent);
       i = parent;
-    }
-  }
-
-  public void heapify1(int[] A) {
-    if (A == null || A.length <= 1) {
-      return;
-    }
-    // The node with index `A.length / 2 - 1` is the largest one with child.
-    for (int i = A.length / 2 - 1; i >= 0; i--) { // `int i = A.length - 1` is also OK.
-      siftDown(A, i);
-    }
-    /*
-     * time: average = worst = O(n)
-     *
-     * space: O(1)
-     */
-  }
-
-  private void siftDown(int[] A, int k) {
-    int child = k * 2 + 1;
-    int i = k;
-    while (i * 2 + 1 < A.length) {
-      child = i * 2 + 1; // left child
-      if (i * 2 + 2 < A.length && A[child] > A[i * 2 + 2]) {
-        child = i * 2 + 2; // right child
-      }
-      // min-value child
-      if (A[child] > A[i]) {
-        break;
-      }
-      swap(A, i, child);
-      i = child;
     }
   }
 

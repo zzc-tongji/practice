@@ -1,4 +1,4 @@
-package lintcode;
+package lintcode._0212_SpaceReplacement;
 
 import java.util.Arrays;
 
@@ -44,22 +44,13 @@ import java.util.Arrays;
  *
  * Do it in-place.
  */
-public class _0212_SpaceReplacement {
-  public static void main(String[] args) {
-    System.out.println("Hello world.");
-    //
-    _0212_SpaceReplacement test = new _0212_SpaceReplacement();
-    //
-    char[] input = Arrays.copyOf("\"Mr John Smith\"".toCharArray(), 19);
-    int output = test.replaceBlank(input, 15);
-    System.out.println(output);
-    //
-    char[] input1 = "\"Mr%20John%20Smith\"".toCharArray();
-    int output1 = test.replaceShorter(input1);
-    System.out.println(output1);
-    //
-    return;
-  }
+
+public class Solution {
+  /*
+   * time: O(n)
+   *
+   * space: O(1)
+   */
 
   public int replaceBlank(char[] string, int length) {
     // The length of string is NOT LESS THAN the length of result.
@@ -96,38 +87,16 @@ public class _0212_SpaceReplacement {
       fast -= 1;
     }
     return newLength;
-    /*
-     * time: O(n)
-     *
-     * space: O(1)
-     */
   }
 
-  public int replaceShorter(char[] string) {
-    // replace "%20" by " "
-    if (string == null || string.length <= 0) {
-      return 0;
-    }
-    // replace
-    int slow = 0;
-    int fast = slow;
-    while (fast < string.length) {
-      if (fast + 2 < string.length && string[fast] == '%' && string[fast + 1] == '2' && string[fast + 2] == '0') {
-        string[slow] = ' ';
-        slow += 1;
-        // length of "%20"
-        fast += 3;
-      } else {
-        string[slow] = string[fast];
-        slow += 1;
-        fast += 1;
-      }
-    }
-    return slow;
-    /*
-     * time: O(n)
-     *
-     * space: O(1)
-     */
+  public static void main(String[] args) {
+    System.out.println("Hello world.");
+    //
+    Solution test = new Solution();
+    //
+    char[] input = Arrays.copyOf("\"Mr John Smith\"".toCharArray(), 19);
+    int output = test.replaceBlank(input, 15);
+    System.out.println(output);
+    return;
   }
 }

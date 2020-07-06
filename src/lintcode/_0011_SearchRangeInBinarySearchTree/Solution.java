@@ -1,4 +1,4 @@
-package lintcode;
+package lintcode._0011_SearchRangeInBinarySearchTree;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -42,7 +42,14 @@ import leetcode.TreeNode;
  *
  * [12,20,22] between 10 and 22
  */
-public class _0011_SearchRangeInBinarySearchTree {
+
+public class Solution {
+  /*
+   * time: O(n)
+   *
+   * space: O(n)
+   */
+
   List<Integer> array;
 
   public List<Integer> searchRange(TreeNode root, int k1, int k2) {
@@ -60,11 +67,6 @@ public class _0011_SearchRangeInBinarySearchTree {
       res.add(value);
     }
     return res;
-    /*
-     * time: O(n)
-     *
-     * space: O(n)
-     */
   }
 
   private void helper(TreeNode root) {
@@ -74,31 +76,5 @@ public class _0011_SearchRangeInBinarySearchTree {
     helper(root.left);
     array.add(root.val);
     helper(root.right);
-  }
-
-  public List<Integer> searchRange1(TreeNode root, int k1, int k2) {
-    List<Integer> answer = new ArrayList<>();
-    helper1(root, k1, k2, answer);
-    return answer;
-    /*
-     * time: O(level) ~ O(n), dependes on range
-     *
-     * space: O(1)
-     */
-  }
-
-  private void helper1(TreeNode root, int k1, int k2, List<Integer> answer) {
-    if (root == null) {
-      return;
-    }
-    if (root.val > k1) {
-      helper1(root.left, k1, k2, answer);
-    }
-    if (root.val >= k1 && root.val <= k2) {
-      answer.add(root.val);
-    }
-    if (root.val < k2) {
-      helper1(root.right, k1, k2, answer);
-    }
   }
 }

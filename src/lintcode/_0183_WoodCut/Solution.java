@@ -1,4 +1,4 @@
-package lintcode;
+package lintcode._0183_WoodCut;
 
 /*
  * 0183. Wood Cut
@@ -45,7 +45,14 @@ package lintcode;
  *
  * O(n log Len), where Len is the longest length of the wood.
  */
-public class _0183_WoodCut {
+
+public class Solution {
+  /*
+   * time: O(n) + O(n log n/k) = O(n log n)
+   *
+   * space: O(1)
+   */
+
   public int woodCut(int[] L, int k) {
     if (L == null || L.length <= 0) {
       return 0;
@@ -80,11 +87,6 @@ public class _0183_WoodCut {
       return (int) left;
     }
     return 0;
-    /*
-     * time: O(n) + O(n log n/k) = O(n log n)
-     *
-     * space: O(1)
-     */
   }
 
   public boolean isAbleToCut(int[] L, int k, long pieceLength) {

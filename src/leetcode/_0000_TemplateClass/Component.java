@@ -1,14 +1,6 @@
 package leetcode._0000_TemplateClass;
 
-/*
- * 0000. Template Class
- *
- * (problem description)
- */
-
-// @lc app=leetcode id=0 lang=java
-// @lc code=start
-public class Solution {
+public class Component {
   /*
    * (description)
    *
@@ -22,7 +14,8 @@ public class Solution {
   }
 
   public static void main(String[] args) { // not necessary
-    System.out.println("main");
+
   }
 }
-// @lc code=end
+
+// not necessary

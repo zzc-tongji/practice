@@ -1,4 +1,4 @@
-package lintcode;
+package lintcode._0228_MiddleOfLinkedList;
 
 import leetcode.ListNode;
 
@@ -33,7 +33,14 @@ import leetcode.ListNode;
  * If the linked list is in a data stream, can you find the middle without
  * iterating the linked list again?
  */
-public class _0228_MiddleOfLinkedList {
+
+public class Solution {
+  /*
+   * time: O(n)
+   *
+   * space: O(1)
+   */
+
   public ListNode middleNode(ListNode head) {
     if (head == null || head.next == null) {
       return head;
@@ -46,10 +53,5 @@ public class _0228_MiddleOfLinkedList {
       fast = fast.next.next;
     }
     return slow;
-    /*
-     * time: O(n)
-     *
-     * space: O(1)
-     */
   }
 }

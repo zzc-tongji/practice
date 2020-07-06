@@ -1,4 +1,4 @@
-package lintcode;
+package lintcode._0157_UniqueCharacters;
 
 /*
  * 0157. Unique Characters
@@ -25,7 +25,14 @@ package lintcode;
  *
  * What if you can not use additional data structures?
  */
-public class _0157_UniqueCharacters {
+
+public class Solution {
+  /*
+   * time: O(n)
+   *
+   * space: O(1)
+   */
+
   public boolean isUnique(String str) {
     if (str.length() <= 1) {
       return true;
@@ -44,10 +51,5 @@ public class _0157_UniqueCharacters {
       }
     }
     return true;
-    /*
-     * time: O(n)
-     *
-     * space: O(1)
-     */
   }
 }
