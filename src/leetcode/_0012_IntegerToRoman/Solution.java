@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode._0012_IntegerToRoman;
 
 /*
  * 0012. Integer to Roman
@@ -61,7 +61,16 @@ package leetcode;
  *
  * Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
  */
-public class _0012_IntegerToRoman {
+
+// @lc app=leetcode id=12 lang=java
+// @lc code=start
+public class Solution {
+  /*
+   * time: O(n)
+   *
+   * space: O(1)
+   */
+
   public String intToRoman(int num) {
     String[] strs = { "M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I" };
     int[] numbers = { 1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1 };
@@ -76,9 +85,5 @@ public class _0012_IntegerToRoman {
     }
     return sb.toString();
   }
-  /*
-   * time: O(n)
-   *
-   * space: O(1)
-   */
 }
+// @lc code=end
