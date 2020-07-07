@@ -6,7 +6,7 @@ import java.util.List;
 // @lc code=start
 public class Solution5 {
   /*
-   * directly use DP, optimize space to O(n)
+   * directly use DP, optimize space to inplace
    *
    * time: O(n ^ 2)
    *
