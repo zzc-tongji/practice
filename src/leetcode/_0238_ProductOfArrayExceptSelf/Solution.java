@@ -27,8 +27,33 @@ package leetcode._0238_ProductOfArrayExceptSelf;
 // @lc code=start
 public class Solution {
   public int[] productExceptSelf(int[] nums) {
-    // TODO
-    return null;
+    /*
+     * time: O(n)
+     *
+     * space: O(n)
+     */
+
+    if (nums == null || nums.length <= 1) {
+      return null;
+    }
+    // `dpLeft[i]`: the product of elements which are left to `i` (exclusive)
+    int[] dpLeft = new int[nums.length];
+    // `dpRight[i]`: the product of elements which are right to `i` (exclusive)
+    int[] dpRight = new int[nums.length];
+    //
+    dpLeft[0] = 1;
+    for (int i = 1; i < dpLeft.length; i++) {
+      dpLeft[i] = dpLeft[i - 1] * nums[i - 1];
+    }
+    dpRight[dpRight.length - 1] = 1;
+    for (int i = dpRight.length - 1 - 1; i >= 0; i--) {
+      dpRight[i] = dpRight[i + 1] * nums[i + 1];
+    }
+    int[] res = new int[nums.length];
+    for (int i = 0; i < res.length; i++) {
+      res[i] = dpLeft[i] * dpRight[i];
+    }
+    return res;
   }
 }
 // @lc code=end

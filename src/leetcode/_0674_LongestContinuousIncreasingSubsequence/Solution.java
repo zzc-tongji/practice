@@ -48,6 +48,8 @@ public class Solution {
     if (nums.length == 1) {
       return nums[0];
     }
+    // `dp[i]` is the longest increasing subarray in subarray `nums[0:i]`
+    // which MUST INCLUDES `nums[i]`.
     int[] dp = new int[nums.length];
     dp[0] = 1;
     int max = dp[0];

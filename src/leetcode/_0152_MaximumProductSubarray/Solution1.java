@@ -19,10 +19,10 @@ public class Solution1 {
       return nums[0];
     }
     int max = nums[0];
-    // `maxHelper[i]` is the max product of sunarray `nums[0:i]`
+    // `maxHelper[i]` is the max product of subarray `nums[0:i]`
     // which MUST INCLUDES `nums[i]`.
     int[] maxHelper = new int[nums.length];
-    // `minHelper[i]` is the min product of sunarray `nums[0:i]`
+    // `minHelper[i]` is the min product of subarray `nums[0:i]`
     // which MUST INCLUDES `nums[i]`.
     int[] minHelper = new int[nums.length];
     maxHelper[0] = nums[0];

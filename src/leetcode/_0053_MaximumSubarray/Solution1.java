@@ -22,11 +22,11 @@ package leetcode._0053_MaximumSubarray;
 
 // @lc app=leetcode id=53 lang=java
 // @lc code=start
-public class Solution {
+public class Solution1 {
   /*
    * time: O(n)
    *
-   * space: O(n)
+   * space: O(1)
    */
 
   public int maxSubArray(int[] nums) {
@@ -36,14 +36,11 @@ public class Solution {
     if (nums.length == 1) {
       return nums[0];
     }
-    // `dp[i]` is the max sum subarray in subarray `nums[0:i]`
-    // which MUST INCLUDES `nums[i]`.
-    int[] dp = new int[nums.length];
-    dp[0] = nums[0];
+    int dp = nums[0];
     int max = nums[0];
-    for (int i = 1; i < dp.length; i++) {
-      dp[i] = Math.max(dp[i - 1] + nums[i], nums[i]);
-      max = Math.max(dp[i], max);
+    for (int i = 1; i < nums.length; i++) {
+      dp = Math.max(dp + nums[i], nums[i]);
+      max = Math.max(dp, max);
     }
     return max;
   }
