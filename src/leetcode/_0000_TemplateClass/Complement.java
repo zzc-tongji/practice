@@ -1,6 +1,6 @@
 package leetcode._0000_TemplateClass;
 
-public class Component {
+public class Complement {
   /*
    * (description)
    *
