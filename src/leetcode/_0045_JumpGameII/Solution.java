@@ -28,9 +28,45 @@ package leetcode._0045_JumpGameII;
 // @lc app=leetcode id=45 lang=java
 // @lc code=start
 public class Solution {
+  /*
+   * dfs
+   *
+   * LeetCode: Time Limit Exceeded
+   *
+   * time: O(x ^ (n - 1))
+   *
+   * - let x as the naximum value in array `nums`
+   *
+   * - let n as the length of `num`
+   *
+   * space: O(1)
+   */
+
   public int jump(int[] nums) {
-    // TODO
-    return 0;
+    if (nums == null || nums.length <= 0) {
+      throw new IllegalArgumentException("invalid input");
+    }
+    int res = dfs(nums, 0);
+    if (res == Integer.MAX_VALUE) {
+      throw new IllegalArgumentException("cannot reach the last index");
+    }
+    return res;
+  }
+
+  private int dfs(int[] nums, int index) {
+    if (index >= nums.length - 1) {
+      return 0;
+    }
+    int temp;
+    int min = Integer.MAX_VALUE;
+    for (int i = nums[index]; i >= 1; i--) {
+      temp = dfs(nums, index + i);
+      if (temp == Integer.MAX_VALUE) {
+        continue;
+      }
+      min = Math.min(temp, min);
+    }
+    return min == Integer.MAX_VALUE ? min : min + 1;
   }
 }
 // @lc code=end
