@@ -39,4 +39,4 @@ public class _0021_MergeTwoSortedLists {
 }
 
 // More way to merge two sorted linked list:
-// see `techbow._0013_Sort.linkedlist.Merge`.
+// see `unclassified.sort.linkedlist.Merge`.

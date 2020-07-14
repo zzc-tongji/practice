@@ -51,4 +51,4 @@ public class _0086_PartitionList {
 }
 
 // It is a part of quick sort of linked list.
-// See `techbow._0013_Sort.linkedlist.QuickSort` for detail.
+// See `unclassified.sort.linkedlist.QuickSort` for detail.
