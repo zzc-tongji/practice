@@ -4,7 +4,7 @@ package leetcode._0055_JumpGame;
 // @lc code=start
 public class Solution1 {
   /*
-   * dp
+   * DP
    *
    * time: O(k * n)
    *

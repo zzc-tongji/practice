@@ -6,7 +6,7 @@ import java.util.Arrays;
 // @lc code=start
 public class Solution1 {
   /*
-   * dp
+   * DP
    *
    * time: O(k * n)
    *
