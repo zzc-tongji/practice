@@ -31,8 +31,43 @@ package techbow._0019_MaximumProductCutting;
  */
 
 public class Solution {
+  /*
+   * dfs: for every posible cut point, decide cut or not
+   *
+   * time: O(2 ^ n)
+   *
+   * space: O(1)
+   */
+
   static int maxProd(int n) {
-    // TODO
-    return 0;
+    if (n < 2) {
+      throw new IllegalArgumentException("The length must be larger than or equal to 2.");
+    }
+    return dfs(n, 0, 1, 1);
+  }
+
+  static int dfs(int n, int prevCut, int cut, int productBeforePrevCut) {
+    if (cut >= n) {
+      if (prevCut == 0) {
+        // discard the result without any cut
+        return -1;
+      }
+      return productBeforePrevCut * (cut - prevCut);
+    }
+    // at the length of `cut`
+    //
+    // cut
+    int c = dfs(n, cut, cut + 1, productBeforePrevCut * (cut - prevCut));
+    // not cut
+    int nc = dfs(n, prevCut, cut + 1, productBeforePrevCut);
+    return Math.max(c, nc);
+  }
+
+  public static void main(String[] args) {
+    System.out.println(maxProd(2)); // 1
+    System.out.println(maxProd(3)); // 2
+    System.out.println(maxProd(4)); // 4
+    System.out.println(maxProd(5)); // 6
+    System.out.println(maxProd(10)); // 36
   }
 }
