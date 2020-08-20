@@ -60,6 +60,8 @@ public class Solution {
   /*
    * Note: shipping a part of boxes of a product is OK.
    *
+   * 0-1 back pack by DP, maybe out of memory
+   *
    * time: O(n ^ 2)
    *
    * space: O(n ^ 2)
