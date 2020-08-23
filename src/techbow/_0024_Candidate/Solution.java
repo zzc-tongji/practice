@@ -49,7 +49,9 @@ package techbow._0024_Candidate;
 
 public class Solution {
   /*
-   * time: O(n)
+   * CORRECT
+   *
+   * time: O(n ^ 2)
    *
    * space: O(n)
    */
@@ -96,6 +98,12 @@ public class Solution {
   public static void main(String[] args) {
     // 5
     int result = candidate(6, 3, 4, 10, new int[] { 12, 4, 6, 13, 5, 10 });
+    System.out.println(result);
+    // 3
+    result = candidate(4, 1, 5, 7, new int[] { 4, 8, 5, 6 });
+    System.out.println(result);
+    // 11
+    result = candidate(5, 2, 360, 1000, new int[] { 248, 779, 392, 727, 561 });
     System.out.println(result);
   }
 }
